@@ -1,6 +1,6 @@
 ﻿namespace wfdbig
 {
-    partial class Home
+    partial class Home1
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,27 +29,11 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home1));
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            panel11 = new Panel();
-            pictureBox22 = new PictureBox();
-            label25 = new Label();
-            label26 = new Label();
-            pictureBox29 = new PictureBox();
-            pictureBox23 = new PictureBox();
-            panel8 = new Panel();
-            pictureBox14 = new PictureBox();
-            label19 = new Label();
-            label20 = new Label();
-            pictureBox15 = new PictureBox();
-            panel13 = new Panel();
-            pictureBox25 = new PictureBox();
-            pictureBox24 = new PictureBox();
-            label29 = new Label();
-            label30 = new Label();
             panel2 = new Panel();
             panel4 = new Panel();
             label2 = new Label();
@@ -63,15 +47,25 @@
             label3 = new Label();
             label41 = new Label();
             pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             menuStrip1 = new MenuStrip();
             pagesToolStripMenuItem = new ToolStripMenuItem();
             aboutUsToolStripMenuItem = new ToolStripMenuItem();
             shoppingCartToolStripMenuItem = new ToolStripMenuItem();
+            panel3 = new Panel();
             panel7 = new Panel();
+            pictureBox13 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            label7 = new Label();
             label8 = new Label();
             label54 = new Label();
+            label53 = new Label();
+            pictureBox8 = new PictureBox();
+            label9 = new Label();
+            pictureBox7 = new PictureBox();
             panel15 = new Panel();
             pictureBox32 = new PictureBox();
             label40 = new Label();
@@ -83,24 +77,6 @@
             pictureBox31 = new PictureBox();
             label5 = new Label();
             pictureBox30 = new PictureBox();
-            label53 = new Label();
-            panel10 = new Panel();
-            pictureBox18 = new PictureBox();
-            label23 = new Label();
-            label24 = new Label();
-            pictureBox19 = new PictureBox();
-            panel12 = new Panel();
-            pictureBox21 = new PictureBox();
-            pictureBox26 = new PictureBox();
-            label27 = new Label();
-            label28 = new Label();
-            panel9 = new Panel();
-            pictureBox16 = new PictureBox();
-            label21 = new Label();
-            label22 = new Label();
-            pictureBox17 = new PictureBox();
-            label35 = new Label();
-            label33 = new Label();
             panel23 = new Panel();
             label55 = new Label();
             pictureBox41 = new PictureBox();
@@ -117,17 +93,6 @@
             label42 = new Label();
             pictureBox40 = new PictureBox();
             pictureBox28 = new PictureBox();
-            label16 = new Label();
-            panel6 = new Panel();
-            label18 = new Label();
-            pictureBox13 = new PictureBox();
-            label17 = new Label();
-            pictureBox12 = new PictureBox();
-            panel14 = new Panel();
-            pictureBox20 = new PictureBox();
-            label31 = new Label();
-            label32 = new Label();
-            pictureBox27 = new PictureBox();
             label15 = new Label();
             label14 = new Label();
             pictureBox11 = new PictureBox();
@@ -137,62 +102,33 @@
             pictureBox10 = new PictureBox();
             label10 = new Label();
             pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            label9 = new Label();
-            label7 = new Label();
-            pictureBox7 = new PictureBox();
-            panel3 = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
-            panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             menuStrip1.SuspendLayout();
+            panel3.SuspendLayout();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox32).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox31).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox30).BeginInit();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
-            panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
-            panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox41).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox40).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -244,177 +180,6 @@
             pictureBox1.MouseEnter += pictureBox1_MouseEnter;
             pictureBox1.MouseLeave += pictureBox1_MouseLeave;
             // 
-            // panel11
-            // 
-            panel11.Controls.Add(pictureBox22);
-            panel11.Controls.Add(label25);
-            panel11.Controls.Add(label26);
-            panel11.Controls.Add(pictureBox29);
-            panel11.Controls.Add(pictureBox23);
-            panel11.Location = new Point(1081, 2369);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(315, 568);
-            panel11.TabIndex = 21;
-            // 
-            // pictureBox22
-            // 
-            pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
-            pictureBox22.Location = new Point(0, 473);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(148, 35);
-            pictureBox22.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox22.TabIndex = 4;
-            pictureBox22.TabStop = false;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label25.ForeColor = Color.Black;
-            label25.Location = new Point(10, 519);
-            label25.Name = "label25";
-            label25.Size = new Size(110, 33);
-            label25.TabIndex = 3;
-            label25.Text = "Rs 5,000";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label26.ForeColor = Color.Black;
-            label26.Location = new Point(3, 430);
-            label26.Name = "label26";
-            label26.Size = new Size(180, 33);
-            label26.TabIndex = 1;
-            label26.Text = "Leather Jacket";
-            // 
-            // pictureBox29
-            // 
-            pictureBox29.Image = (Image)resources.GetObject("pictureBox29.Image");
-            pictureBox29.Location = new Point(-27, -13);
-            pictureBox29.Name = "pictureBox29";
-            pictureBox29.Size = new Size(395, 476);
-            pictureBox29.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox29.TabIndex = 0;
-            pictureBox29.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            pictureBox23.Image = (Image)resources.GetObject("pictureBox23.Image");
-            pictureBox23.Location = new Point(-39, -53);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(395, 476);
-            pictureBox23.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox23.TabIndex = 0;
-            pictureBox23.TabStop = false;
-            // 
-            // panel8
-            // 
-            panel8.Controls.Add(pictureBox14);
-            panel8.Controls.Add(label19);
-            panel8.Controls.Add(label20);
-            panel8.Controls.Add(pictureBox15);
-            panel8.Location = new Point(0, 13);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(315, 568);
-            panel8.TabIndex = 15;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(3, 474);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(148, 35);
-            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox14.TabIndex = 4;
-            pictureBox14.TabStop = false;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.Black;
-            label19.Location = new Point(6, 523);
-            label19.Name = "label19";
-            label19.Size = new Size(110, 33);
-            label19.TabIndex = 3;
-            label19.Text = "Rs 3,500";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label20.ForeColor = Color.Black;
-            label20.Location = new Point(3, 430);
-            label20.Name = "label20";
-            label20.Size = new Size(127, 33);
-            label20.TabIndex = 1;
-            label20.Text = "M Hoodie";
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(-54, -71);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(414, 548);
-            pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox15.TabIndex = 0;
-            pictureBox15.TabStop = false;
-            // 
-            // panel13
-            // 
-            panel13.Controls.Add(panel8);
-            panel13.Controls.Add(pictureBox25);
-            panel13.Controls.Add(pictureBox24);
-            panel13.Controls.Add(label29);
-            panel13.Controls.Add(label30);
-            panel13.Location = new Point(390, 2357);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(315, 568);
-            panel13.TabIndex = 19;
-            // 
-            // pictureBox25
-            // 
-            pictureBox25.Image = (Image)resources.GetObject("pictureBox25.Image");
-            pictureBox25.Location = new Point(-84, -58);
-            pictureBox25.Name = "pictureBox25";
-            pictureBox25.Size = new Size(396, 538);
-            pictureBox25.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox25.TabIndex = 0;
-            pictureBox25.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            pictureBox24.Image = (Image)resources.GetObject("pictureBox24.Image");
-            pictureBox24.Location = new Point(0, 477);
-            pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(148, 35);
-            pictureBox24.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox24.TabIndex = 5;
-            pictureBox24.TabStop = false;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label29.ForeColor = Color.Black;
-            label29.Location = new Point(0, 523);
-            label29.Name = "label29";
-            label29.Size = new Size(110, 33);
-            label29.TabIndex = 3;
-            label29.Text = "Rs 2,000";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label30.ForeColor = Color.Black;
-            label30.Location = new Point(-7, 430);
-            label30.Name = "label30";
-            label30.Size = new Size(319, 33);
-            label30.TabIndex = 1;
-            label30.Text = "Summer short sleeve shirt";
-            // 
             // panel2
             // 
             panel2.Dock = DockStyle.Bottom;
@@ -432,13 +197,13 @@
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1418, 66);
+            panel4.Size = new Size(1427, 66);
             panel4.TabIndex = 0;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Cursor = Cursors.Help;
+            label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(1303, 17);
@@ -446,6 +211,7 @@
             label2.Size = new Size(60, 28);
             label2.TabIndex = 2;
             label2.Text = "FAQS";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -473,19 +239,18 @@
             // panel5
             // 
             panel5.Controls.Add(label6);
-            panel5.Controls.Add(label57);
             panel5.Controls.Add(label4);
+            panel5.Controls.Add(label57);
             panel5.Controls.Add(label56);
             panel5.Controls.Add(label3);
             panel5.Controls.Add(label41);
             panel5.Controls.Add(pictureBox6);
-            panel5.Controls.Add(pictureBox5);
             panel5.Controls.Add(pictureBox4);
             panel5.Controls.Add(menuStrip1);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 66);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1418, 167);
+            panel5.Size = new Size(1427, 243);
             panel5.TabIndex = 1;
             panel5.Paint += panel5_Paint;
             // 
@@ -500,6 +265,7 @@
             label6.Size = new Size(109, 32);
             label6.TabIndex = 4;
             label6.Text = "Contacts";
+            label6.Click += label6_Click;
             label6.MouseEnter += label6_MouseEnter;
             label6.MouseLeave += label6_MouseLeave;
             // 
@@ -513,6 +279,7 @@
             label57.Size = new Size(84, 32);
             label57.TabIndex = 10;
             label57.Text = "_______";
+            label57.Click += label57_Click;
             // 
             // label4
             // 
@@ -539,6 +306,7 @@
             label56.Size = new Size(54, 32);
             label56.TabIndex = 9;
             label56.Text = "____";
+            label56.Click += label56_Click;
             // 
             // label3
             // 
@@ -550,6 +318,7 @@
             label3.Size = new Size(80, 32);
             label3.TabIndex = 1;
             label3.Text = "Home";
+            label3.Click += label3_Click;
             // 
             // label41
             // 
@@ -573,18 +342,6 @@
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            pictureBox5.Cursor = Cursors.Hand;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(1264, 55);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(26, 30);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 5;
-            pictureBox5.TabStop = false;
-            pictureBox5.Click += pictureBox5_Click;
-            // 
             // pictureBox4
             // 
             pictureBox4.Cursor = Cursors.Hand;
@@ -605,7 +362,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { pagesToolStripMenuItem });
             menuStrip1.Location = new Point(783, 55);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(281, 40);
+            menuStrip1.Size = new Size(101, 40);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -643,22 +400,37 @@
             shoppingCartToolStripMenuItem.Size = new Size(275, 40);
             shoppingCartToolStripMenuItem.Text = "Shopping Cart";
             // 
+            // panel3
+            // 
+            panel3.AutoScroll = true;
+            panel3.Controls.Add(panel7);
+            panel3.Controls.Add(panel5);
+            panel3.Controls.Add(panel4);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            panel3.Location = new Point(0, 72);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1444, 830);
+            panel3.TabIndex = 2;
+            panel3.Paint += panel3_Paint;
+            // 
             // panel7
             // 
-            panel7.AutoScroll = true;
+            panel7.AutoSize = true;
+            panel7.Controls.Add(pictureBox13);
+            panel7.Controls.Add(pictureBox12);
+            panel7.Controls.Add(label18);
+            panel7.Controls.Add(label17);
+            panel7.Controls.Add(label16);
+            panel7.Controls.Add(label7);
             panel7.Controls.Add(label8);
             panel7.Controls.Add(label54);
-            panel7.Controls.Add(panel15);
-            panel7.Controls.Add(panel11);
-            panel7.Controls.Add(panel13);
             panel7.Controls.Add(label53);
-            panel7.Controls.Add(panel10);
-            panel7.Controls.Add(panel12);
-            panel7.Controls.Add(label35);
-            panel7.Controls.Add(label33);
+            panel7.Controls.Add(pictureBox8);
+            panel7.Controls.Add(label9);
+            panel7.Controls.Add(pictureBox7);
+            panel7.Controls.Add(panel15);
             panel7.Controls.Add(panel23);
-            panel7.Controls.Add(label16);
-            panel7.Controls.Add(panel6);
             panel7.Controls.Add(label15);
             panel7.Controls.Add(label14);
             panel7.Controls.Add(pictureBox11);
@@ -668,17 +440,85 @@
             panel7.Controls.Add(pictureBox10);
             panel7.Controls.Add(label10);
             panel7.Controls.Add(pictureBox9);
-            panel7.Controls.Add(pictureBox8);
-            panel7.Controls.Add(label9);
-            panel7.Controls.Add(label7);
-            panel7.Controls.Add(pictureBox7);
-            panel7.Dock = DockStyle.Bottom;
             panel7.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panel7.Location = new Point(0, 233);
+            panel7.Location = new Point(0, 304);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1418, 4406);
+            panel7.Size = new Size(1427, 5130);
             panel7.TabIndex = 3;
             panel7.Paint += panel7_Paint_1;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Cursor = Cursors.Hand;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
+            pictureBox13.Location = new Point(159, 3672);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(241, 65);
+            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox13.TabIndex = 41;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(6, 3062);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(1412, 800);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 40;
+            pictureBox12.TabStop = false;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.BackColor = Color.Transparent;
+            label18.Cursor = Cursors.Hand;
+            label18.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = SystemColors.ControlDark;
+            label18.Location = new Point(1062, 2219);
+            label18.Name = "label18";
+            label18.Size = new Size(157, 45);
+            label18.TabIndex = 38;
+            label18.Text = "Hot Sales";
+            label18.Click += label18_Click;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.Transparent;
+            label17.Cursor = Cursors.Hand;
+            label17.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.Black;
+            label17.Location = new Point(602, 2221);
+            label17.Name = "label17";
+            label17.Size = new Size(202, 45);
+            label17.TabIndex = 37;
+            label17.Text = "New Arrivals";
+            label17.Click += label17_Click;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Cursor = Cursors.Hand;
+            label16.Location = new Point(209, 2228);
+            label16.Name = "label16";
+            label16.Size = new Size(164, 45);
+            label16.TabIndex = 36;
+            label16.Text = "Best Sales";
+            label16.Click += label16_Click_1;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.FromArgb(243, 242, 238);
+            label7.Font = new Font("Open Sans Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.Red;
+            label7.Location = new Point(86, 268);
+            label7.Name = "label7";
+            label7.Size = new Size(214, 27);
+            label7.TabIndex = 0;
+            label7.Text = "SPRING COLLECTION";
+            label7.Click += label7_Click;
             // 
             // label8
             // 
@@ -704,6 +544,53 @@
             label54.TabIndex = 3;
             label54.Text = "❮";
             // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.BackColor = Color.FromArgb(243, 242, 238);
+            label53.Cursor = Cursors.Hand;
+            label53.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label53.ForeColor = SystemColors.ControlDarkDark;
+            label53.Location = new Point(1359, 362);
+            label53.Name = "label53";
+            label53.Size = new Size(54, 65);
+            label53.TabIndex = 2;
+            label53.Text = "❯";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Cursor = Cursors.Hand;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(86, 587);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(241, 65);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 0;
+            pictureBox8.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.FromArgb(243, 242, 238);
+            label9.Font = new Font("Open Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(77, 482);
+            label9.Name = "label9";
+            label9.Size = new Size(544, 48);
+            label9.TabIndex = 2;
+            label9.Text = "Your premier destination for premium essentials. We prioritize \r\nquality, ethics, and style in every product we offer.";
+            label9.Click += label9_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(3, -17);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(1410, 807);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 0;
+            pictureBox7.TabStop = false;
+            // 
             // panel15
             // 
             panel15.BackColor = Color.FromArgb(241, 242, 237);
@@ -717,9 +604,9 @@
             panel15.Controls.Add(pictureBox31);
             panel15.Controls.Add(label5);
             panel15.Controls.Add(pictureBox30);
-            panel15.Location = new Point(3, 3035);
+            panel15.Location = new Point(6, 3912);
             panel15.Name = "panel15";
-            panel15.Size = new Size(1415, 778);
+            panel15.Size = new Size(1412, 748);
             panel15.TabIndex = 35;
             panel15.Paint += panel15_Paint;
             // 
@@ -830,203 +717,6 @@
             pictureBox30.TabIndex = 0;
             pictureBox30.TabStop = false;
             // 
-            // label53
-            // 
-            label53.AutoSize = true;
-            label53.BackColor = Color.FromArgb(243, 242, 238);
-            label53.Cursor = Cursors.Hand;
-            label53.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label53.ForeColor = SystemColors.ControlDarkDark;
-            label53.Location = new Point(1349, 362);
-            label53.Name = "label53";
-            label53.Size = new Size(54, 65);
-            label53.TabIndex = 2;
-            label53.Text = "❯";
-            // 
-            // panel10
-            // 
-            panel10.Controls.Add(pictureBox18);
-            panel10.Controls.Add(label23);
-            panel10.Controls.Add(label24);
-            panel10.Controls.Add(pictureBox19);
-            panel10.Location = new Point(1078, 2369);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(315, 568);
-            panel10.TabIndex = 17;
-            // 
-            // pictureBox18
-            // 
-            pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
-            pictureBox18.Location = new Point(3, 470);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(148, 35);
-            pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox18.TabIndex = 4;
-            pictureBox18.TabStop = false;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.ForeColor = Color.Black;
-            label23.Location = new Point(3, 519);
-            label23.Name = "label23";
-            label23.Size = new Size(110, 33);
-            label23.TabIndex = 3;
-            label23.Text = "Rs 1,500";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.ForeColor = Color.Black;
-            label24.Location = new Point(3, 430);
-            label24.Name = "label24";
-            label24.Size = new Size(100, 33);
-            label24.TabIndex = 1;
-            label24.Text = "label24";
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(3, 4);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(309, 407);
-            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox19.TabIndex = 0;
-            pictureBox19.TabStop = false;
-            // 
-            // panel12
-            // 
-            panel12.Controls.Add(pictureBox21);
-            panel12.Controls.Add(pictureBox26);
-            panel12.Controls.Add(label27);
-            panel12.Controls.Add(label28);
-            panel12.Controls.Add(panel9);
-            panel12.Location = new Point(728, 2368);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(315, 568);
-            panel12.TabIndex = 20;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(0, -12);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(320, 428);
-            pictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox21.TabIndex = 0;
-            pictureBox21.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            pictureBox26.Image = (Image)resources.GetObject("pictureBox26.Image");
-            pictureBox26.Location = new Point(0, 477);
-            pictureBox26.Name = "pictureBox26";
-            pictureBox26.Size = new Size(148, 35);
-            pictureBox26.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox26.TabIndex = 5;
-            pictureBox26.TabStop = false;
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label27.ForeColor = Color.Black;
-            label27.Location = new Point(10, 519);
-            label27.Name = "label27";
-            label27.Size = new Size(110, 33);
-            label27.TabIndex = 3;
-            label27.Text = "Rs 4,500";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.ForeColor = Color.Black;
-            label28.Location = new Point(3, 430);
-            label28.Name = "label28";
-            label28.Size = new Size(245, 33);
-            label28.TabIndex = 1;
-            label28.Text = "Vintage Moto Jacket";
-            // 
-            // panel9
-            // 
-            panel9.Controls.Add(pictureBox16);
-            panel9.Controls.Add(label21);
-            panel9.Controls.Add(label22);
-            panel9.Controls.Add(pictureBox17);
-            panel9.Location = new Point(3, 2);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(306, 567);
-            panel9.TabIndex = 16;
-            // 
-            // pictureBox16
-            // 
-            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
-            pictureBox16.Location = new Point(6, 474);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(148, 35);
-            pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox16.TabIndex = 4;
-            pictureBox16.TabStop = false;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label21.ForeColor = Color.Black;
-            label21.Location = new Point(2, 523);
-            label21.Name = "label21";
-            label21.Size = new Size(110, 33);
-            label21.TabIndex = 3;
-            label21.Text = "Rs 2,800";
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.ForeColor = Color.Black;
-            label22.Location = new Point(3, 430);
-            label22.Name = "label22";
-            label22.Size = new Size(100, 33);
-            label22.TabIndex = 1;
-            label22.Text = "label22";
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(-70, -65);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(425, 532);
-            pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox17.TabIndex = 0;
-            pictureBox17.TabStop = false;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Cursor = Cursors.Hand;
-            label35.ForeColor = Color.Gray;
-            label35.Location = new Point(1059, 2257);
-            label35.Name = "label35";
-            label35.Size = new Size(157, 45);
-            label35.TabIndex = 34;
-            label35.Text = "Hot Sales";
-            label35.Click += label35_Click;
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Cursor = Cursors.Hand;
-            label33.ForeColor = Color.Gray;
-            label33.Location = new Point(259, 2251);
-            label33.Name = "label33";
-            label33.Size = new Size(164, 45);
-            label33.TabIndex = 32;
-            label33.Text = "Best Sales";
-            label33.Click += label33_Click;
-            // 
             // panel23
             // 
             panel23.BackColor = Color.Black;
@@ -1047,9 +737,9 @@
             panel23.Controls.Add(pictureBox28);
             panel23.Dock = DockStyle.Bottom;
             panel23.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            panel23.Location = new Point(0, 3989);
+            panel23.Location = new Point(0, 4713);
             panel23.Name = "panel23";
-            panel23.Size = new Size(1418, 417);
+            panel23.Size = new Size(1427, 417);
             panel23.TabIndex = 30;
             // 
             // label55
@@ -1216,128 +906,6 @@
             pictureBox28.TabIndex = 0;
             pictureBox28.TabStop = false;
             // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Cursor = Cursors.Hand;
-            label16.ForeColor = Color.Black;
-            label16.Location = new Point(668, 2257);
-            label16.Name = "label16";
-            label16.Size = new Size(202, 45);
-            label16.TabIndex = 14;
-            label16.Text = "New Arrivals";
-            label16.Click += label16_Click;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(label18);
-            panel6.Controls.Add(pictureBox13);
-            panel6.Controls.Add(label17);
-            panel6.Controls.Add(pictureBox12);
-            panel6.Controls.Add(panel14);
-            panel6.Location = new Point(51, 2373);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(315, 568);
-            panel6.TabIndex = 13;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.ForeColor = Color.Black;
-            label18.Location = new Point(6, 527);
-            label18.Name = "label18";
-            label18.Size = new Size(110, 33);
-            label18.TabIndex = 3;
-            label18.Text = "Rs 2,000";
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(3, 478);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(148, 35);
-            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 2;
-            pictureBox13.TabStop = false;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.Black;
-            label17.Location = new Point(3, 438);
-            label17.Name = "label17";
-            label17.Size = new Size(100, 33);
-            label17.TabIndex = 1;
-            label17.Text = "label17";
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(-40, -18);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(393, 429);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 0;
-            pictureBox12.TabStop = false;
-            pictureBox12.Click += pictureBox12_Click;
-            pictureBox12.MouseLeave += pictureBox12_MouseLeave;
-            pictureBox12.MouseHover += pictureBox12_MouseHover;
-            // 
-            // panel14
-            // 
-            panel14.Controls.Add(pictureBox20);
-            panel14.Controls.Add(label31);
-            panel14.Controls.Add(label32);
-            panel14.Controls.Add(pictureBox27);
-            panel14.Location = new Point(3, 5);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(315, 568);
-            panel14.TabIndex = 18;
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Image = (Image)resources.GetObject("pictureBox20.Image");
-            pictureBox20.Location = new Point(0, 481);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(148, 35);
-            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox20.TabIndex = 4;
-            pictureBox20.TabStop = false;
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label31.ForeColor = Color.Black;
-            label31.Location = new Point(0, 527);
-            label31.Name = "label31";
-            label31.Size = new Size(110, 33);
-            label31.TabIndex = 3;
-            label31.Text = "Rs 2,500";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label32.ForeColor = Color.Black;
-            label32.Location = new Point(3, 430);
-            label32.Name = "label32";
-            label32.Size = new Size(270, 33);
-            label32.TabIndex = 1;
-            label32.Text = "Inflation Washed Pant";
-            // 
-            // pictureBox27
-            // 
-            pictureBox27.Image = (Image)resources.GetObject("pictureBox27.Image");
-            pictureBox27.Location = new Point(-16, -60);
-            pictureBox27.Name = "pictureBox27";
-            pictureBox27.Size = new Size(389, 535);
-            pictureBox27.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox27.TabIndex = 0;
-            pictureBox27.TabStop = false;
-            // 
             // label15
             // 
             label15.AutoSize = true;
@@ -1458,76 +1026,14 @@
             pictureBox9.MouseLeave += pictureBox9_MouseLeave;
             pictureBox9.MouseHover += pictureBox9_MouseHover;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.Cursor = Cursors.Hand;
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(86, 587);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(241, 65);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 0;
-            pictureBox8.TabStop = false;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.FromArgb(243, 242, 238);
-            label9.Font = new Font("Open Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.Black;
-            label9.Location = new Point(77, 482);
-            label9.Name = "label9";
-            label9.Size = new Size(544, 48);
-            label9.TabIndex = 2;
-            label9.Text = "Your premier destination for premium essentials. We prioritize \r\nquality, ethics, and style in every product we offer.";
-            label9.Click += label9_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.FromArgb(243, 242, 238);
-            label7.Font = new Font("Open Sans Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Red;
-            label7.Location = new Point(86, 268);
-            label7.Name = "label7";
-            label7.Size = new Size(214, 27);
-            label7.TabIndex = 0;
-            label7.Text = "SPRING COLLECTION";
-            label7.Click += label7_Click;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(3, 3);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(1410, 805);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 0;
-            pictureBox7.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.AutoScroll = true;
-            panel3.Controls.Add(panel7);
-            panel3.Controls.Add(panel5);
-            panel3.Controls.Add(panel4);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            panel3.Location = new Point(0, 72);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1444, 830);
-            panel3.TabIndex = 2;
-            panel3.Paint += panel3_Paint;
-            // 
             // timer1
             // 
             timer1.Tick += timer1_Tick;
             // 
-            // Home
+            // Home1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(1444, 912);
             Controls.Add(panel3);
@@ -1536,7 +1042,7 @@
             ForeColor = SystemColors.ControlDarkDark;
             FormBorderStyle = FormBorderStyle.None;
             MainMenuStrip = menuStrip1;
-            Name = "Home";
+            Name = "Home1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             Load += Home_Load;
@@ -1547,66 +1053,35 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox32).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox31).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox30).EndInit();
-            panel10.ResumeLayout(false);
-            panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             panel23.ResumeLayout(false);
             panel23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox41).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox40).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1623,63 +1098,43 @@
         private Label lable1;
         private Panel panel5;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
         private Label label6;
         private Label label4;
         private Label label3;
         private PictureBox pictureBox4;
-        private Panel panel7;
-        private PictureBox pictureBox7;
         private Panel panel3;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private PictureBox pictureBox8;
-        private Label label10;
-        private PictureBox pictureBox9;
-        private Label label13;
-        private Label label11;
-        private Label label12;
-        private PictureBox pictureBox10;
-        private Label label15;
-        private Label label14;
-        private PictureBox pictureBox11;
-        private Label label16;
-        private Panel panel6;
-        private PictureBox pictureBox12;
-        private Label label18;
-        private PictureBox pictureBox13;
-        private Label label17;
-        private Panel panel8;
-        private Label label19;
-        private Label label20;
-        private PictureBox pictureBox15;
-        private Panel panel9;
-        private Label label21;
-        private Label label22;
-        private PictureBox pictureBox17;
-        private Panel panel11;
-        private Label label25;
-        private Label label26;
-        private PictureBox pictureBox21;
-        private Panel panel12;
-        private Label label27;
-        private Label label28;
-        private PictureBox pictureBox23;
-        private Panel panel14;
-        private Label label31;
-        private Label label32;
-        private PictureBox pictureBox27;
-        private PictureBox pictureBox22;
-        private PictureBox pictureBox26;
-        private PictureBox pictureBox20;
-        private PictureBox pictureBox16;
-        private PictureBox pictureBox14;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem pagesToolStripMenuItem;
         private ToolStripMenuItem aboutUsToolStripMenuItem;
         private ToolStripMenuItem shoppingCartToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
+        private Label label41;
+        private Label label57;
+        private Label label56;
+        private Panel panel7;
+        private Label label18;
+        private Label label17;
+        private Label label16;
+        private Label label7;
+        private Label label8;
+        private Label label54;
+        private Label label53;
+        private PictureBox pictureBox8;
+        private Label label9;
+        private PictureBox pictureBox7;
+        private Panel panel15;
+        private PictureBox pictureBox32;
+        private Label label40;
+        private Label label39;
+        private Label label38;
+        private Label label37;
+        private Label label36;
+        private Label label34;
+        private PictureBox pictureBox31;
+        private Label label5;
+        private PictureBox pictureBox30;
         private Panel panel23;
+        private Label label55;
         private PictureBox pictureBox41;
         private Label label52;
         private Label label51;
@@ -1694,36 +1149,16 @@
         private Label label42;
         private PictureBox pictureBox40;
         private PictureBox pictureBox28;
-        private Label label35;
-        private Label label33;
-        private PictureBox pictureBox29;
-        private Panel panel13;
-        private PictureBox pictureBox25;
-        private PictureBox pictureBox24;
-        private Label label29;
-        private Label label30;
-        private Panel panel10;
-        private PictureBox pictureBox18;
-        private Label label23;
-        private Label label24;
-        private PictureBox pictureBox19;
-        private Panel panel15;
-        private Label label5;
-        private PictureBox pictureBox30;
-        private System.Windows.Forms.Timer timer1;
-        private Label label34;
-        private PictureBox pictureBox31;
-        private Label label40;
-        private Label label39;
-        private Label label38;
-        private Label label37;
-        private Label label36;
-        private PictureBox pictureBox32;
-        private Label label54;
-        private Label label53;
-        private Label label41;
-        private Label label55;
-        private Label label57;
-        private Label label56;
+        private Label label15;
+        private Label label14;
+        private PictureBox pictureBox11;
+        private Label label13;
+        private Label label11;
+        private Label label12;
+        private PictureBox pictureBox10;
+        private Label label10;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox12;
     }
 }

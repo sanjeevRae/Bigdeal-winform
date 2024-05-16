@@ -1,10 +1,11 @@
 using System.Windows.Forms;
 using System.Diagnostics;
 using wfdbig.Properties;
+using static System.Windows.Forms.Design.AxImporter;
 
 namespace wfdbig
 {
-    public partial class Home : Form
+    public partial class Home1 : Form
 
 
     {
@@ -13,8 +14,14 @@ namespace wfdbig
         private Size originalPictureBoxSize;
         private Color originalLabelColor;
         private int remainingSeconds = 30 * 24 * 60 * 60;
+        private readonly nice_logo nice;
+        private readonly _1options optionsPanel1;
+        private readonly _2options optionsPanel2;
+        private readonly _3options optionsPanel3;
 
-        public Home()
+
+
+        public Home1()
         {
             InitializeComponent();
 
@@ -58,19 +65,28 @@ namespace wfdbig
             timer1.Start();
 
 
-            //label 16 ma 12, 15, 17, 19
-            //label 33 27, 25, 21, 23
-            //label 35 12, 15, 21, 23
 
-            label16.ForeColor = System.Drawing.Color.Black;
-            label33.ForeColor = System.Drawing.Color.Gray;
-            label35.ForeColor = System.Drawing.Color.Gray;
+            optionsPanel1 = new _1options();
+            optionsPanel2 = new _2options();
+            optionsPanel3 = new _3options();
+            nice = new nice_logo();
+
+
+
+            panel1.Controls.Add(nice);
+            panel7.Controls.Add(optionsPanel1);
+
+            optionsPanel2.Visible = false;
+            optionsPanel3.Visible = false;
+
+
+            panel7.Controls.Add(optionsPanel2);
+            panel7.Controls.Add(optionsPanel3);
+
 
             label16.Click += label16_Click;
-            label33.Click += label33_Click;
-            label35.Click += label35_Click;
-
-
+            label17.Click += label17_Click;
+            label18.Click += label18_Click;
 
         }
 
@@ -154,28 +170,21 @@ namespace wfdbig
         private void pictureBox12_MouseHover(object sender, EventArgs e)
         {
 
-            pictureBox12.Size = new Size(pictureBox12.Width + 5, pictureBox12.Height + 5);
 
-
-            label17.ForeColor = Color.Red;
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-            originalPictureBoxSize = pictureBox12.Size;
             originalPictureBoxSize = pictureBox9.Size;
             originalPictureBoxSize = pictureBox10.Size;
             originalPictureBoxSize = pictureBox11.Size;
 
-            originalLabelColor = label17.ForeColor;
             originalLabelColor = label12.ForeColor;
             originalLabelColor = label15.ForeColor;
             originalLabelColor = label13.ForeColor;
 
 
 
-            pictureBox12.MouseHover += pictureBox12_MouseHover;
-            pictureBox12.MouseLeave += pictureBox12_MouseLeave;
 
             pictureBox9.MouseHover += pictureBox9_MouseHover;
             pictureBox9.MouseLeave += pictureBox9_MouseLeave;
@@ -185,14 +194,20 @@ namespace wfdbig
 
             pictureBox11.MouseHover += pictureBox11_MouseHover;
             pictureBox11.MouseLeave += pictureBox11_MouseLeave;
+
+
+
+
+
         }
+
+
+
+
 
         private void pictureBox12_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox12.Size = new Size(originalPictureBoxSize.Width, originalPictureBoxSize.Height);
 
-
-            label17.ForeColor = originalLabelColor;
         }
 
         private void Home_MouseDown(object sender, MouseEventArgs e)
@@ -231,55 +246,7 @@ namespace wfdbig
 
         private void label16_Click(object sender, EventArgs e)
         {
-            label16.ForeColor = System.Drawing.Color.Black;
-            label33.ForeColor = System.Drawing.Color.Gray;
-            label35.ForeColor = System.Drawing.Color.Gray;
 
-            pictureBox12.Visible = true;
-            label17.Visible = true;
-            pictureBox13.Visible = true;
-            label18.Visible = true;
-
-
-            pictureBox15.Visible = true;
-            label20.Visible = true;
-            pictureBox14.Visible = true;
-            label19.Visible = true;
-
-
-            pictureBox17.Visible = true;
-            label22.Visible = true;
-            pictureBox16.Visible = true;
-            label21.Visible = true;
-
-
-            pictureBox19.Visible = false;
-            label24.Visible = false;
-            pictureBox18.Visible = false;
-            label23.Visible = false;
-
-
-
-
-            pictureBox27.Visible = false;
-            label32.Visible = false;
-            pictureBox20.Visible = false;
-            label31.Visible = false;
-
-            pictureBox25.Visible = false;
-            label30.Visible = false;
-            pictureBox24.Visible = false;
-            label29.Visible = false;
-
-            pictureBox21.Visible = false;
-            label28.Visible = false;
-            pictureBox26.Visible = false;
-            label27.Visible = false;
-
-            pictureBox23.Visible = true;
-            label26.Visible = true;
-            pictureBox22.Visible = true;
-            label25.Visible = true;
         }
 
         private void panel7_Paint_1(object sender, PaintEventArgs e)
@@ -289,103 +256,12 @@ namespace wfdbig
 
         private void label33_Click(object sender, EventArgs e)
         {
-            label16.ForeColor = System.Drawing.Color.Gray;
-            label33.ForeColor = System.Drawing.Color.Black;
-            label35.ForeColor = System.Drawing.Color.Gray;
 
-            pictureBox27.Visible = true;
-            label32.Visible = true;
-            pictureBox20.Visible = true;
-            label31.Visible = true;
-
-            pictureBox25.Visible = false;
-            label30.Visible = false;
-            pictureBox24.Visible = false;
-            label29.Visible = false;
-
-            pictureBox21.Visible = true;
-            label28.Visible = true;
-            pictureBox26.Visible = true;
-            label27.Visible = true;
-
-            pictureBox23.Visible = true;
-            label26.Visible = true;
-            pictureBox22.Visible = true;
-            label25.Visible = true;
-
-            pictureBox12.Visible = false;
-            label17.Visible = false;
-            pictureBox13.Visible = false;
-            label18.Visible = false;
-
-
-            pictureBox15.Visible = true;
-            label20.Visible = true;
-            pictureBox14.Visible = true;
-            label19.Visible = true;
-
-
-            pictureBox17.Visible = false;
-            label22.Visible = false;
-            pictureBox16.Visible = false;
-            label21.Visible = false;
-
-
-            pictureBox19.Visible = false;
-            label24.Visible = false;
-            pictureBox18.Visible = false;
-            label23.Visible = false;
         }
 
         private void label35_Click(object sender, EventArgs e)
         {
-            label16.ForeColor = System.Drawing.Color.Gray;
-            label33.ForeColor = System.Drawing.Color.Gray;
-            label35.ForeColor = System.Drawing.Color.Black;
 
-            pictureBox12.Visible = true;
-            label17.Visible = true;
-            pictureBox13.Visible = true;
-            label18.Visible = true;
-
-
-            pictureBox15.Visible = true;
-            label20.Visible = true;
-            pictureBox14.Visible = true;
-            label19.Visible = true;
-
-            pictureBox21.Visible = true;
-            label28.Visible = true;
-            pictureBox26.Visible = true;
-            label27.Visible = true;
-
-            pictureBox23.Visible = true;
-            label26.Visible = true;
-            pictureBox22.Visible = true;
-            label25.Visible = true;
-
-
-
-            pictureBox17.Visible = false;
-            label22.Visible = false;
-            pictureBox16.Visible = false;
-            label21.Visible = false;
-
-
-            pictureBox19.Visible = false;
-            label24.Visible = false;
-            pictureBox18.Visible = false;
-            label23.Visible = false;
-
-            pictureBox27.Visible = false;
-            label32.Visible = false;
-            pictureBox20.Visible = false;
-            label31.Visible = false;
-
-            pictureBox25.Visible = false;
-            label30.Visible = false;
-            pictureBox24.Visible = false;
-            label29.Visible = false;
         }
 
         private void label34_Click(object sender, EventArgs e)
@@ -554,6 +430,91 @@ namespace wfdbig
         private void pagesToolStripMenuItem_MouseLeave(object sender, EventArgs e)
         {
             pagesToolStripMenuItem.HideDropDown();
+        }
+
+        private void pictureBox36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click_1(object sender, EventArgs e)
+
+        {
+
+            label16.ForeColor = Color.Black;
+            label17.ForeColor = Color.Gray;
+            label18.ForeColor = Color.Gray;
+
+            optionsPanel1.Visible = false;
+            optionsPanel2.Visible = true;
+            optionsPanel3.Visible = false;
+
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            label16.ForeColor = Color.Gray;
+            label17.ForeColor = Color.Black;
+            label18.ForeColor = Color.Gray;
+
+            optionsPanel1.Visible = true;
+
+            optionsPanel2.Visible = false;
+            optionsPanel3.Visible = false;
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            label16.ForeColor = Color.Gray;
+            label17.ForeColor = Color.Gray;
+            label18.ForeColor = Color.Black;
+            optionsPanel1.Visible = false;
+            optionsPanel2.Visible = false;
+            optionsPanel3.Visible = true;
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Contact gog = new Contact();
+            gog.Show();
+            this.Hide();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            FAQ hello = new FAQ();
+            hello.Show();   
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Home yosein = new Home();
+            yosein.Show();
+            this.Hide();
+        }
+
+        private void label56_Click(object sender, EventArgs e)
+        {
+            products app = new products();
+            app.Show();
+            this.Hide();
+        }
+
+        private void label57_Click(object sender, EventArgs e)
+        {
+            Contact gog = new Contact();
+            gog.Show();
+            this.Hide();
+
         }
     }
 }
