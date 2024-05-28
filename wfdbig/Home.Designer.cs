@@ -41,7 +41,9 @@
             label1 = new Label();
             lable1 = new Label();
             panel5 = new Panel();
+            label19 = new Label();
             label6 = new Label();
+            label20 = new Label();
             label57 = new Label();
             label4 = new Label();
             label56 = new Label();
@@ -49,10 +51,6 @@
             label41 = new Label();
             pictureBox6 = new PictureBox();
             pictureBox4 = new PictureBox();
-            menuStrip1 = new MenuStrip();
-            pagesToolStripMenuItem = new ToolStripMenuItem();
-            aboutUsToolStripMenuItem = new ToolStripMenuItem();
-            shoppingCartToolStripMenuItem = new ToolStripMenuItem();
             panel3 = new Panel();
             panel7 = new Panel();
             pictureBox13 = new PictureBox();
@@ -112,7 +110,6 @@
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            menuStrip1.SuspendLayout();
             panel3.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
@@ -155,6 +152,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 
@@ -230,6 +228,7 @@
             label1.Size = new Size(85, 28);
             label1.TabIndex = 1;
             label1.Text = "SIGN IN";
+            label1.Click += label1_Click;
             // 
             // lable1
             // 
@@ -244,7 +243,9 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(label19);
             panel5.Controls.Add(label6);
+            panel5.Controls.Add(label20);
             panel5.Controls.Add(label57);
             panel5.Controls.Add(label4);
             panel5.Controls.Add(label56);
@@ -252,7 +253,6 @@
             panel5.Controls.Add(label41);
             panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(pictureBox4);
-            panel5.Controls.Add(menuStrip1);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 58);
             panel5.Name = "panel5";
@@ -260,8 +260,25 @@
             panel5.TabIndex = 1;
             panel5.Paint += panel5_Paint;
             // 
+            // label19
+            // 
+            label19.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label19.AutoSize = true;
+            label19.Cursor = Cursors.Hand;
+            label19.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.ForeColor = Color.Black;
+            label19.Location = new Point(811, 55);
+            label19.Name = "label19";
+            label19.Size = new Size(67, 32);
+            label19.TabIndex = 4;
+            label19.Text = "Page";
+            label19.Click += label6_Click;
+            label19.MouseEnter += label6_MouseEnter;
+            label19.MouseLeave += label6_MouseLeave;
+            // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Cursor = Cursors.Hand;
             label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -275,19 +292,33 @@
             label6.MouseEnter += label6_MouseEnter;
             label6.MouseLeave += label6_MouseLeave;
             // 
+            // label20
+            // 
+            label20.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label20.AutoSize = true;
+            label20.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.Red;
+            label20.Location = new Point(975, 63);
+            label20.Name = "label20";
+            label20.Size = new Size(84, 32);
+            label20.TabIndex = 10;
+            label20.Text = "_______";
+            // 
             // label57
             // 
+            label57.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label57.AutoSize = true;
             label57.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label57.ForeColor = Color.Red;
-            label57.Location = new Point(973, 63);
+            label57.Location = new Point(811, 63);
             label57.Name = "label57";
-            label57.Size = new Size(84, 32);
+            label57.Size = new Size(64, 32);
             label57.TabIndex = 10;
-            label57.Text = "_______";
+            label57.Text = "_____";
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             label4.AutoSize = true;
             label4.Cursor = Cursors.Hand;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -336,6 +367,7 @@
             // 
             // pictureBox6
             // 
+            pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(1326, 55);
@@ -344,6 +376,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox4
             // 
@@ -356,52 +389,6 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.BackColor = Color.Transparent;
-            menuStrip1.Dock = DockStyle.None;
-            menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { pagesToolStripMenuItem });
-            menuStrip1.Location = new Point(783, 55);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(101, 40);
-            menuStrip1.TabIndex = 7;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // pagesToolStripMenuItem
-            // 
-            pagesToolStripMenuItem.BackColor = Color.Transparent;
-            pagesToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("pagesToolStripMenuItem.BackgroundImage");
-            pagesToolStripMenuItem.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            pagesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutUsToolStripMenuItem, shoppingCartToolStripMenuItem });
-            pagesToolStripMenuItem.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            pagesToolStripMenuItem.ForeColor = Color.Black;
-            pagesToolStripMenuItem.Image = (Image)resources.GetObject("pagesToolStripMenuItem.Image");
-            pagesToolStripMenuItem.Name = "pagesToolStripMenuItem";
-            pagesToolStripMenuItem.ShowShortcutKeys = false;
-            pagesToolStripMenuItem.Size = new Size(93, 36);
-            pagesToolStripMenuItem.Text = "Pages";
-            pagesToolStripMenuItem.Click += pagesToolStripMenuItem_Click;
-            pagesToolStripMenuItem.MouseLeave += pagesToolStripMenuItem_MouseLeave;
-            pagesToolStripMenuItem.MouseHover += pagesToolStripMenuItem_MouseHover;
-            // 
-            // aboutUsToolStripMenuItem
-            // 
-            aboutUsToolStripMenuItem.BackColor = Color.Transparent;
-            aboutUsToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("aboutUsToolStripMenuItem.BackgroundImage");
-            aboutUsToolStripMenuItem.ForeColor = Color.Black;
-            aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            aboutUsToolStripMenuItem.Size = new Size(275, 40);
-            aboutUsToolStripMenuItem.Text = "About Us";
-            // 
-            // shoppingCartToolStripMenuItem
-            // 
-            shoppingCartToolStripMenuItem.BackColor = Color.Transparent;
-            shoppingCartToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("shoppingCartToolStripMenuItem.BackgroundImage");
-            shoppingCartToolStripMenuItem.Name = "shoppingCartToolStripMenuItem";
-            shoppingCartToolStripMenuItem.Size = new Size(275, 40);
-            shoppingCartToolStripMenuItem.Text = "Shopping Cart";
             // 
             // panel3
             // 
@@ -452,11 +439,12 @@
             // 
             // pictureBox13
             // 
+            pictureBox13.BackColor = Color.FromArgb(238, 238, 238);
             pictureBox13.Cursor = Cursors.Hand;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(159, 3672);
+            pictureBox13.Location = new Point(98, 3619);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(241, 65);
+            pictureBox13.Size = new Size(229, 107);
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox13.TabIndex = 41;
             pictureBox13.TabStop = false;
@@ -898,6 +886,7 @@
             pictureBox40.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox40.TabIndex = 1;
             pictureBox40.TabStop = false;
+            pictureBox40.Click += pictureBox40_Click;
             // 
             // pictureBox28
             // 
@@ -1045,7 +1034,6 @@
             Controls.Add(panel1);
             ForeColor = SystemColors.ControlDarkDark;
             FormBorderStyle = FormBorderStyle.None;
-            MainMenuStrip = menuStrip1;
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
@@ -1063,8 +1051,6 @@
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel7.ResumeLayout(false);
@@ -1107,10 +1093,6 @@
         private Label label3;
         private PictureBox pictureBox4;
         private Panel panel3;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem pagesToolStripMenuItem;
-        private ToolStripMenuItem aboutUsToolStripMenuItem;
-        private ToolStripMenuItem shoppingCartToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private Label label41;
         private Label label57;
@@ -1162,7 +1144,9 @@
         private PictureBox pictureBox10;
         private Label label10;
         private PictureBox pictureBox9;
-        private PictureBox pictureBox13;
         private PictureBox pictureBox12;
+        private PictureBox pictureBox13;
+        private Label label19;
+        private Label label20;
     }
 }

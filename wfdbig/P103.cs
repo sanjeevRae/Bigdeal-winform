@@ -13,16 +13,16 @@ namespace wfdbig
         private Point lastMousePosition;
         private Color originalLabelColor;
         private int remainingSeconds = 30 * 24 * 60 * 60;
-
+        private Cart cartForm;
 
 
 
         public P103()
         {
             InitializeComponent();
-          
 
 
+            cartForm = new Cart();
 
             this.MouseDown += P103_MouseDown;
             this.MouseMove += P103_MouseMove;
@@ -433,7 +433,8 @@ namespace wfdbig
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Item added to cart successfully!");
-            
+            cartForm.AddUp103ToCart();
+
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

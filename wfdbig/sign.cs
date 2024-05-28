@@ -19,10 +19,11 @@ namespace wfdbig
     public partial class sign : Form
     {
         private string connectionString = "server=localhost;user=root;database=bigdeal;port=3306;password=@Mysqlserver;";
+
         public sign()
         {
             InitializeComponent();
-        
+
 
         }
 
@@ -98,14 +99,16 @@ namespace wfdbig
                 return;
             }
 
-            bool isAuthenticated = AuthenticateUser(email, password);
-
-            if (isAuthenticated)
+            if (IsAdmin(email, password))
             {
-
-                thankyou okok = new thankyou();
-                okok.Show();
-
+                Admin admin = new Admin();
+                admin.Show();
+                this.Hide();
+            }
+            else if (AuthenticateUser(email, password))
+            {
+                thankyou u = new thankyou();
+                u.Show();
                 this.Hide();
             }
             else
@@ -113,10 +116,6 @@ namespace wfdbig
                 MessageBox.Show("Invalid email or password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-       
-
 
         private bool AuthenticateUser(string email, string password)
         {
@@ -146,7 +145,36 @@ namespace wfdbig
 
             return isAuthenticated;
         }
-    }
 
+        private bool IsAdmin(string email, string password)
+        {
+            bool isAdmin = false;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                string query = "SELECT COUNT(*) FROM admin WHERE email = @Email AND password = @Password";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Email", email);
+                    command.Parameters.AddWithValue("@Password", password);
+
+                    try
+                    {
+                        connection.Open();
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+                        isAdmin = count > 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred while connecting to the database: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+
+            return isAdmin;
+        }
+
+    }
 }
 

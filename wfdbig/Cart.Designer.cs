@@ -62,7 +62,7 @@
             label8 = new Label();
             label10 = new Label();
             label9 = new Label();
-            pictureBox9 = new PictureBox();
+            okok = new PictureBox();
             pictureBox8 = new PictureBox();
             label11 = new Label();
             label13 = new Label();
@@ -82,6 +82,7 @@
             label42 = new Label();
             pictureBox40 = new PictureBox();
             pictureBox28 = new PictureBox();
+            pictureBox5 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -94,12 +95,13 @@
             panel3.SuspendLayout();
             panel7.SuspendLayout();
             panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)okok).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox41).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox40).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -111,14 +113,14 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1444, 72);
+            panel1.Size = new Size(1570, 72);
             panel1.TabIndex = 0;
             // 
             // pictureBox3
             // 
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(1313, 12);
+            pictureBox3.Location = new Point(1439, 12);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(30, 27);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -129,7 +131,7 @@
             // 
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1360, 12);
+            pictureBox2.Location = new Point(1486, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(30, 27);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -141,7 +143,7 @@
             pictureBox1.BackColor = Color.Red;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1402, 12);
+            pictureBox1.Location = new Point(1528, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(30, 27);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -156,7 +158,7 @@
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 902);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1444, 10);
+            panel2.Size = new Size(1570, 10);
             panel2.TabIndex = 1;
             // 
             // panel4
@@ -168,7 +170,7 @@
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1472, 66);
+            panel4.Size = new Size(1561, 66);
             panel4.TabIndex = 0;
             // 
             // label2
@@ -177,7 +179,7 @@
             label2.Cursor = Cursors.Help;
             label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1313, 17);
+            label2.Location = new Point(1485, 17);
             label2.Name = "label2";
             label2.Size = new Size(49, 28);
             label2.TabIndex = 2;
@@ -189,7 +191,7 @@
             label1.Cursor = Cursors.Hand;
             label1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(1171, 17);
+            label1.Location = new Point(1343, 17);
             label1.Name = "label1";
             label1.Size = new Size(85, 28);
             label1.TabIndex = 1;
@@ -220,7 +222,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 66);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1472, 243);
+            panel5.Size = new Size(1561, 243);
             panel5.TabIndex = 1;
             // 
             // label6
@@ -234,6 +236,7 @@
             label6.Size = new Size(109, 32);
             label6.TabIndex = 4;
             label6.Text = "Contacts";
+            label6.Click += label6_Click;
             label6.MouseEnter += label6_MouseEnter;
             label6.MouseLeave += label6_MouseLeave;
             // 
@@ -284,6 +287,7 @@
             label3.Size = new Size(80, 32);
             label3.TabIndex = 1;
             label3.Text = "Home";
+            label3.Click += label3_Click;
             // 
             // label41
             // 
@@ -306,6 +310,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox4
             // 
@@ -376,7 +381,7 @@
             panel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel3.Location = new Point(0, 72);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1444, 830);
+            panel3.Size = new Size(1570, 830);
             panel3.TabIndex = 2;
             panel3.Paint += panel3_Paint;
             // 
@@ -386,7 +391,7 @@
             panel8.ForeColor = Color.FromArgb(243, 242, 238);
             panel8.Location = new Point(5, 315);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1467, 85);
+            panel8.Size = new Size(1539, 85);
             panel8.TabIndex = 32;
             // 
             // panel7
@@ -398,33 +403,33 @@
             panel7.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             panel7.Location = new Point(5, 406);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1467, 1528);
+            panel7.Size = new Size(1556, 2528);
             panel7.TabIndex = 3;
             panel7.Paint += panel7_Paint_1;
             // 
             // FLP
             // 
-            FLP.AutoSize = true;
             FLP.Location = new Point(3, 3);
             FLP.Name = "FLP";
-            FLP.Size = new Size(950, 1011);
+            FLP.Size = new Size(971, 2099);
             FLP.TabIndex = 33;
             // 
             // panel9
             // 
             panel9.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel9.Controls.Add(pictureBox5);
             panel9.Controls.Add(label12);
             panel9.Controls.Add(textBox2);
             panel9.Controls.Add(label8);
             panel9.Controls.Add(label10);
             panel9.Controls.Add(label9);
-            panel9.Controls.Add(pictureBox9);
+            panel9.Controls.Add(okok);
             panel9.Controls.Add(pictureBox8);
             panel9.Controls.Add(label11);
             panel9.Controls.Add(label13);
-            panel9.Location = new Point(957, 3);
+            panel9.Location = new Point(990, 30);
             panel9.Name = "panel9";
-            panel9.Size = new Size(509, 398);
+            panel9.Size = new Size(549, 516);
             panel9.TabIndex = 32;
             // 
             // label12
@@ -451,6 +456,7 @@
             textBox2.Size = new Size(330, 52);
             textBox2.TabIndex = 38;
             textBox2.Text = "Enter Voucher Code";
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label8
             // 
@@ -488,16 +494,16 @@
             label9.TabIndex = 37;
             label9.Text = "Subtotal ";
             // 
-            // pictureBox9
+            // okok
             // 
-            pictureBox9.Cursor = Cursors.Hand;
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(19, 283);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(482, 62);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 34;
-            pictureBox9.TabStop = false;
+            okok.Cursor = Cursors.Hand;
+            okok.Image = (Image)resources.GetObject("okok.Image");
+            okok.Location = new Point(51, 330);
+            okok.Name = "okok";
+            okok.Size = new Size(22, 37);
+            okok.SizeMode = PictureBoxSizeMode.Zoom;
+            okok.TabIndex = 34;
+            okok.TabStop = false;
             // 
             // pictureBox8
             // 
@@ -553,9 +559,9 @@
             panel23.Controls.Add(pictureBox28);
             panel23.Dock = DockStyle.Bottom;
             panel23.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            panel23.Location = new Point(0, 1111);
+            panel23.Location = new Point(0, 2111);
             panel23.Name = "panel23";
-            panel23.Size = new Size(1467, 417);
+            panel23.Size = new Size(1556, 417);
             panel23.TabIndex = 30;
             // 
             // label55
@@ -722,12 +728,24 @@
             pictureBox28.TabIndex = 0;
             pictureBox28.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Cursor = Cursors.Hand;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(51, 330);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(470, 62);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 39;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click_1;
+            // 
             // Cart
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1444, 912);
+            ClientSize = new Size(1570, 912);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -756,16 +774,16 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel7.ResumeLayout(false);
-            panel7.PerformLayout();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)okok).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel23.ResumeLayout(false);
             panel23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox41).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox40).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -797,17 +815,6 @@
         private Label label2;
         private Panel panel8;
         private Panel panel7;
-        private FlowLayoutPanel FLP;
-        private Panel panel9;
-        private Label label12;
-        private TextBox textBox2;
-        private Label label8;
-        private Label label10;
-        private Label label9;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox8;
-        private Label label11;
-        private Label label13;
         private Panel panel23;
         private Label label55;
         private PictureBox pictureBox41;
@@ -824,5 +831,17 @@
         private Label label42;
         private PictureBox pictureBox40;
         private PictureBox pictureBox28;
+        private FlowLayoutPanel FLP;
+        private Panel panel9;
+        private Label label12;
+        private TextBox textBox2;
+        private Label label8;
+        private Label label10;
+        private Label label9;
+        private PictureBox okok;
+        private PictureBox pictureBox8;
+        private Label label11;
+        private Label label13;
+        private PictureBox pictureBox5;
     }
 }

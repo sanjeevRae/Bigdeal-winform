@@ -491,7 +491,7 @@ namespace wfdbig
         private void label2_Click(object sender, EventArgs e)
         {
             FAQ hello = new FAQ();
-            hello.Show();   
+            hello.Show();
             this.Hide();
         }
 
@@ -514,6 +514,21 @@ namespace wfdbig
             Contact gog = new Contact();
             gog.Show();
             this.Hide();
+
+        }
+
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+            string url = "https://sanjeevrae.github.io/Payment-v1/";
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            });
+        }
+
+        private void pictureBox31_Click(object sender, EventArgs e)
+        {
 
         }
     }

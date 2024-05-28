@@ -45,8 +45,6 @@ namespace wfdbig
             label6.MouseLeave += label6_MouseLeave;
 
 
-            pagesToolStripMenuItem.MouseHover += pagesToolStripMenuItem_MouseHover;
-            pagesToolStripMenuItem.MouseLeave += pagesToolStripMenuItem_MouseLeave;
 
 
 
@@ -422,15 +420,9 @@ namespace wfdbig
 
         }
 
-        private void pagesToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
-            pagesToolStripMenuItem.ShowDropDown();
-        }
 
-        private void pagesToolStripMenuItem_MouseLeave(object sender, EventArgs e)
-        {
-            pagesToolStripMenuItem.HideDropDown();
-        }
+
+
 
         private void pictureBox36_Click(object sender, EventArgs e)
         {
@@ -493,6 +485,35 @@ namespace wfdbig
             gog.Show();
             this.Hide();
 
+        }
+
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+            string url = "https://sanjeevrae.github.io/Payment-v1/";
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            });
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Cart ok = new Cart();
+            ok.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            sign wkwk = new sign();
+            wkwk.Show();
+            this.Hide();
         }
     }
 }

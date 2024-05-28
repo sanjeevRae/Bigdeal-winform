@@ -41,8 +41,8 @@
             lable1 = new Label();
             panel5 = new Panel();
             label6 = new Label();
-            label57 = new Label();
             label4 = new Label();
+            label57 = new Label();
             label56 = new Label();
             label3 = new Label();
             label41 = new Label();
@@ -54,7 +54,6 @@
             shoppingCartToolStripMenuItem = new ToolStripMenuItem();
             panel3 = new Panel();
             panel7 = new Panel();
-            pictureBox13 = new PictureBox();
             pictureBox12 = new PictureBox();
             label18 = new Label();
             label17 = new Label();
@@ -114,7 +113,6 @@
             menuStrip1.SuspendLayout();
             panel3.SuspendLayout();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -269,18 +267,6 @@
             label6.MouseEnter += label6_MouseEnter;
             label6.MouseLeave += label6_MouseLeave;
             // 
-            // label57
-            // 
-            label57.AutoSize = true;
-            label57.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label57.ForeColor = Color.Red;
-            label57.Location = new Point(973, 63);
-            label57.Name = "label57";
-            label57.Size = new Size(84, 32);
-            label57.TabIndex = 10;
-            label57.Text = "_______";
-            label57.Click += label57_Click;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -295,6 +281,18 @@
             label4.Click += label4_Click;
             label4.MouseEnter += label4_MouseEnter;
             label4.MouseLeave += label4_MouseLeave;
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label57.ForeColor = Color.Red;
+            label57.Location = new Point(973, 63);
+            label57.Name = "label57";
+            label57.Size = new Size(84, 32);
+            label57.TabIndex = 10;
+            label57.Text = "_______";
+            label57.Click += label57_Click;
             // 
             // label56
             // 
@@ -417,7 +415,6 @@
             // panel7
             // 
             panel7.AutoSize = true;
-            panel7.Controls.Add(pictureBox13);
             panel7.Controls.Add(pictureBox12);
             panel7.Controls.Add(label18);
             panel7.Controls.Add(label17);
@@ -446,17 +443,6 @@
             panel7.Size = new Size(1427, 5130);
             panel7.TabIndex = 3;
             panel7.Paint += panel7_Paint_1;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.Cursor = Cursors.Hand;
-            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(159, 3672);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(241, 65);
-            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 41;
-            pictureBox13.TabStop = false;
             // 
             // pictureBox12
             // 
@@ -693,6 +679,7 @@
             pictureBox31.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox31.TabIndex = 2;
             pictureBox31.TabStop = false;
+            pictureBox31.Click += pictureBox31_Click;
             // 
             // label5
             // 
@@ -895,6 +882,7 @@
             pictureBox40.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox40.TabIndex = 1;
             pictureBox40.TabStop = false;
+            pictureBox40.Click += pictureBox40_Click;
             // 
             // pictureBox28
             // 
@@ -1065,7 +1053,6 @@
             panel3.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -1158,7 +1145,6 @@
         private PictureBox pictureBox10;
         private Label label10;
         private PictureBox pictureBox9;
-        private PictureBox pictureBox13;
         private PictureBox pictureBox12;
     }
 }

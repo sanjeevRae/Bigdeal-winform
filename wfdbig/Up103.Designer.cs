@@ -77,6 +77,7 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(946, 355);
             panel6.TabIndex = 2;
+            panel6.Paint += panel6_Paint;
             // 
             // cb
             // 
@@ -87,6 +88,7 @@
             cb.Size = new Size(22, 21);
             cb.TabIndex = 42;
             cb.UseVisualStyleBackColor = true;
+            cb.CheckedChanged += cb_CheckedChanged;
             // 
             // textBox3
             // 
@@ -235,6 +237,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
+          //  pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox7
             // 

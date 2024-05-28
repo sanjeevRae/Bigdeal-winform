@@ -331,6 +331,12 @@
             label9 = new Label();
             contextMenuStrip1 = new ContextMenuStrip(components);
             contextMenuStrip2 = new ContextMenuStrip(components);
+            NewItem = new Panel();
+            panel49 = new Panel();
+            label114 = new Label();
+            pictureBox83 = new PictureBox();
+            label115 = new Label();
+            pictureBox84 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -462,6 +468,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox40).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             panel2.SuspendLayout();
+            NewItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox83).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox84).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -1446,6 +1455,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(359, 62);
             textBox1.TabIndex = 0;
+            textBox1.Text = "Search";
             textBox1.TextChanged += textBox1_TextChanged;
             textBox1.KeyDown += textBox1_KeyDown;
             textBox1.KeyPress += textBox1_KeyPress;
@@ -1478,7 +1488,7 @@
             label96.AutoSize = true;
             label96.Font = new Font("Segoe UI", 10F);
             label96.ImageAlign = ContentAlignment.MiddleLeft;
-            label96.Location = new Point(1176, 298);
+            label96.Location = new Point(1171, 299);
             label96.Name = "label96";
             label96.Size = new Size(176, 28);
             label96.TabIndex = 34;
@@ -1626,6 +1636,7 @@
             flowLayoutPanel1.Controls.Add(panel71);
             flowLayoutPanel1.Controls.Add(panel74);
             flowLayoutPanel1.Controls.Add(panel75);
+            flowLayoutPanel1.Controls.Add(NewItem);
             flowLayoutPanel1.Location = new Point(450, 411);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(990, 6878);
@@ -3881,6 +3892,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1418, 202);
             panel2.TabIndex = 7;
+            panel2.Paint += panel2_Paint;
             // 
             // label10
             // 
@@ -3916,6 +3928,67 @@
             contextMenuStrip2.ImageScalingSize = new Size(24, 24);
             contextMenuStrip2.Name = "contextMenuStrip2";
             contextMenuStrip2.Size = new Size(61, 4);
+            // 
+            // NewItem
+            // 
+            NewItem.Controls.Add(panel49);
+            NewItem.Controls.Add(label114);
+            NewItem.Controls.Add(pictureBox83);
+            NewItem.Controls.Add(label115);
+            NewItem.Controls.Add(pictureBox84);
+            NewItem.Location = new Point(645, 6275);
+            NewItem.Name = "NewItem";
+            NewItem.Size = new Size(315, 560);
+            NewItem.TabIndex = 88;
+            // 
+            // panel49
+            // 
+            panel49.Location = new Point(306, 2);
+            panel49.Name = "panel49";
+            panel49.Size = new Size(39, 568);
+            panel49.TabIndex = 38;
+            // 
+            // label114
+            // 
+            label114.AutoSize = true;
+            label114.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label114.ForeColor = Color.Black;
+            label114.Location = new Point(6, 527);
+            label114.Name = "label114";
+            label114.Size = new Size(110, 33);
+            label114.TabIndex = 3;
+            label114.Text = "Rs 2,000";
+            // 
+            // pictureBox83
+            // 
+            pictureBox83.Image = (Image)resources.GetObject("pictureBox83.Image");
+            pictureBox83.Location = new Point(3, 489);
+            pictureBox83.Name = "pictureBox83";
+            pictureBox83.Size = new Size(148, 35);
+            pictureBox83.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox83.TabIndex = 2;
+            pictureBox83.TabStop = false;
+            // 
+            // label115
+            // 
+            label115.AutoSize = true;
+            label115.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label115.ForeColor = Color.Black;
+            label115.Location = new Point(3, 453);
+            label115.Name = "label115";
+            label115.Size = new Size(114, 33);
+            label115.TabIndex = 1;
+            label115.Text = "label115";
+            // 
+            // pictureBox84
+            // 
+            pictureBox84.Image = (Image)resources.GetObject("pictureBox84.Image");
+            pictureBox84.Location = new Point(-28, -18);
+            pictureBox84.Name = "pictureBox84";
+            pictureBox84.Size = new Size(344, 437);
+            pictureBox84.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox84.TabIndex = 0;
+            pictureBox84.TabStop = false;
             // 
             // products
             // 
@@ -4106,6 +4179,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            NewItem.ResumeLayout(false);
+            NewItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox83).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox84).EndInit();
             ResumeLayout(false);
         }
 
@@ -4412,5 +4489,11 @@
         private Button button1;
         private PictureBox pictureBox7;
         private TextBox textBox1;
+        private Panel NewItem;
+        private Panel panel49;
+        private Label label114;
+        private PictureBox pictureBox83;
+        private Label label115;
+        private PictureBox pictureBox84;
     }
 }

@@ -1359,6 +1359,8 @@ namespace wfdbig.Properties
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+
             string enteredText = textBox1.Text;
 
 
@@ -1407,8 +1409,8 @@ namespace wfdbig.Properties
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             P103 goo = new P103();
-             goo.Show();
-              this.Hide();
+            goo.Show();
+            this.Hide();
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -2022,6 +2024,11 @@ namespace wfdbig.Properties
             FAQ hi = new FAQ();
             hi.Show();
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -2,6 +2,8 @@ using System.Windows.Forms;
 using System.Diagnostics;
 
 using static System.Windows.Forms.Design.AxImporter;
+using wfdbig.Properties;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace wfdbig
 {
@@ -9,12 +11,12 @@ namespace wfdbig
 
 
     {
-      
+
         private bool isDragging;
         private Point lastMousePosition;
-        private Size originalPictureBoxSize;
-        private Color originalLabelColor;
-        private int remainingSeconds = 30 * 24 * 60 * 60;
+
+        private List<Up103> removedControls = new List<Up103>();
+
 
 
 
@@ -23,7 +25,7 @@ namespace wfdbig
         {
             InitializeComponent();
 
-            
+
 
             this.MouseDown += Cart_MouseDown;
             this.MouseMove += Cart_MouseMove;
@@ -53,12 +55,57 @@ namespace wfdbig
             pictureBox3.Click += MinimizePictureBox_Click;
             pictureBox2.Click += MaximizePictureBox_Click;
 
+            AddUp103ToCart();
+
+            AddUp101ToCart();
+
+            AddUp102ToCart();
+
+
 
 
         }
 
+        public void RemoveUserControlFromCart(UserControl controlToRemove)
+        {
 
-      
+            FLP.Controls.Remove(controlToRemove);
+        }
+
+        public void AddUp101ToCart()
+        {
+            Up101 up101Control = new Up101(this);
+            up101Control.Location = new Point(3, 3);
+            up101Control.Size = new Size(946, 355);
+            FLP.Controls.Add(up101Control);
+        }
+
+        public void AddUp102ToCart()
+        {
+            Up102 up101Control = new Up102();
+            up101Control.Location = new Point(3, 3);
+            up101Control.Size = new Size(946, 355);
+            FLP.Controls.Add(up101Control);
+        }
+
+
+        public void AddUp103ToCart()
+        {
+            Up103 up103Control = new Up103();
+            up103Control.Location = new Point(3, 3);
+            up103Control.Size = new Size(946, 355);
+            FLP.Controls.Add(up103Control);
+        }
+
+        public void RemoveFromCart(Up103 controlToRemove)
+        {
+            FLP.Controls.Remove(controlToRemove);
+            removedControls.Add(controlToRemove);
+        }
+
+
+
+
 
 
 
@@ -145,7 +192,10 @@ namespace wfdbig
 
         private void Cart_Load(object sender, EventArgs e)
         {
-
+            foreach (var control in removedControls)
+            {
+                FLP.Controls.Add(control);
+            }
 
         }
 
@@ -187,7 +237,9 @@ namespace wfdbig
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            products ok = new products();
+            ok.Show();
+            this.Hide();
         }
 
         private void label16_Click(object sender, EventArgs e)
@@ -217,9 +269,9 @@ namespace wfdbig
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            //Home home = new Home();
-            //home.Show();
-            //this.Hide();
+            Home home = new Home();
+            home.Show();
+            this.Hide();
         }
 
 
@@ -285,6 +337,41 @@ namespace wfdbig
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Home ok = new Home();
+            ok.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Contact wkwk = new Contact();
+            wkwk.Show();
+            this.Hide();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }
