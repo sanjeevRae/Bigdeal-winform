@@ -16,5 +16,9 @@ namespace wfdbig
         {
             InitializeComponent();
         }
+        public void UpdateAdminName(string adminName)
+        {
+            dash_admin.Text = adminName;
+        }
     }
 }

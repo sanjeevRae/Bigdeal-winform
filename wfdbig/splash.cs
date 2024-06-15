@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace wfdbig
 {
@@ -14,7 +17,7 @@ namespace wfdbig
     public partial class splash : Form
     {
 
-
+      //  private SoundPlayer player;
         public splash()
         {
             InitializeComponent();
@@ -27,13 +30,14 @@ namespace wfdbig
             pictureBox3.Visible = false;
             pictureBox2.Visible = false;
 
+           //  player = new SoundPlayer(@"A:\4th sem\w.deal\sound\home.wav");
 
         }
 
         private void splash_Load(object sender, EventArgs e)
 
         {
-
+           // player.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

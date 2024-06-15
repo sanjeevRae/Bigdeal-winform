@@ -42,9 +42,12 @@
             lable1 = new Label();
             panel5 = new Panel();
             label19 = new Label();
+            AnC = new Panel();
+            panel6 = new Panel();
+            label25 = new Label();
+            label24 = new Label();
             label6 = new Label();
             label20 = new Label();
-            label57 = new Label();
             label4 = new Label();
             label56 = new Label();
             label3 = new Label();
@@ -53,11 +56,15 @@
             pictureBox4 = new PictureBox();
             panel3 = new Panel();
             panel7 = new Panel();
+            pictureBox5 = new PictureBox();
+            label16 = new Label();
+            label23 = new Label();
+            label18 = new Label();
+            label22 = new Label();
+            label17 = new Label();
+            label21 = new Label();
             pictureBox13 = new PictureBox();
             pictureBox12 = new PictureBox();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
             label7 = new Label();
             label8 = new Label();
             label54 = new Label();
@@ -108,10 +115,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
+            AnC.SuspendLayout();
+            panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -138,7 +148,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1436, 64);
+            panel1.Size = new Size(1517, 64);
             panel1.TabIndex = 0;
             // 
             // pictureBox3
@@ -146,7 +156,7 @@
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(1310, 12);
+            pictureBox3.Location = new Point(1391, 12);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(30, 27);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -159,7 +169,7 @@
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1357, 12);
+            pictureBox2.Location = new Point(1438, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(31, 27);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -172,7 +182,7 @@
             pictureBox1.BackColor = Color.Red;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1392, 12);
+            pictureBox1.Location = new Point(1473, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(30, 27);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -187,7 +197,7 @@
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 902);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1436, 10);
+            panel2.Size = new Size(1517, 10);
             panel2.TabIndex = 1;
             // 
             // panel4
@@ -199,7 +209,7 @@
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1432, 58);
+            panel4.Size = new Size(1572, 58);
             panel4.TabIndex = 0;
             // 
             // label2
@@ -209,7 +219,7 @@
             label2.Cursor = Cursors.Help;
             label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1303, 17);
+            label2.Location = new Point(1443, 17);
             label2.Name = "label2";
             label2.Size = new Size(60, 28);
             label2.TabIndex = 2;
@@ -223,11 +233,11 @@
             label1.Cursor = Cursors.Hand;
             label1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(1171, 17);
+            label1.Location = new Point(1311, 17);
             label1.Name = "label1";
-            label1.Size = new Size(85, 28);
+            label1.Size = new Size(104, 28);
             label1.TabIndex = 1;
-            label1.Text = "SIGN IN";
+            label1.Text = "SIGN OUT";
             label1.Click += label1_Click;
             // 
             // lable1
@@ -244,9 +254,9 @@
             // panel5
             // 
             panel5.Controls.Add(label19);
+            panel5.Controls.Add(AnC);
             panel5.Controls.Add(label6);
             panel5.Controls.Add(label20);
-            panel5.Controls.Add(label57);
             panel5.Controls.Add(label4);
             panel5.Controls.Add(label56);
             panel5.Controls.Add(label3);
@@ -256,7 +266,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 58);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1432, 200);
+            panel5.Size = new Size(1572, 200);
             panel5.TabIndex = 1;
             panel5.Paint += panel5_Paint;
             // 
@@ -267,14 +277,60 @@
             label19.Cursor = Cursors.Hand;
             label19.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label19.ForeColor = Color.Black;
-            label19.Location = new Point(811, 55);
+            label19.Location = new Point(881, 55);
             label19.Name = "label19";
             label19.Size = new Size(67, 32);
             label19.TabIndex = 4;
             label19.Text = "Page";
-            label19.Click += label6_Click;
-            label19.MouseEnter += label6_MouseEnter;
-            label19.MouseLeave += label6_MouseLeave;
+            label19.Click += label19_Click_1;
+            label19.MouseEnter += label19_MouseEnter;
+            label19.MouseLeave += label19_MouseLeave;
+            // 
+            // AnC
+            // 
+            AnC.Controls.Add(panel6);
+            AnC.Location = new Point(870, 80);
+            AnC.Name = "AnC";
+            AnC.Size = new Size(169, 117);
+            AnC.TabIndex = 4;
+            AnC.Paint += AnC_Paint;
+            AnC.MouseEnter += AnC_MouseEnter;
+            AnC.MouseLeave += AnC_MouseLeave;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.Black;
+            panel6.Controls.Add(label25);
+            panel6.Controls.Add(label24);
+            panel6.Location = new Point(3, 18);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(163, 99);
+            panel6.TabIndex = 11;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Cursor = Cursors.Hand;
+            label25.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label25.ForeColor = Color.White;
+            label25.Location = new Point(17, 52);
+            label25.Name = "label25";
+            label25.Size = new Size(128, 32);
+            label25.TabIndex = 0;
+            label25.Text = "Check Out";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Cursor = Cursors.Hand;
+            label24.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.ForeColor = Color.White;
+            label24.Location = new Point(17, 9);
+            label24.Name = "label24";
+            label24.Size = new Size(115, 32);
+            label24.TabIndex = 0;
+            label24.Text = "About Us";
+            label24.Click += label24_Click;
             // 
             // label6
             // 
@@ -283,7 +339,7 @@
             label6.Cursor = Cursors.Hand;
             label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(959, 55);
+            label6.Location = new Point(1099, 55);
             label6.Name = "label6";
             label6.Size = new Size(109, 32);
             label6.TabIndex = 4;
@@ -298,23 +354,11 @@
             label20.AutoSize = true;
             label20.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.Red;
-            label20.Location = new Point(975, 63);
+            label20.Location = new Point(1115, 63);
             label20.Name = "label20";
             label20.Size = new Size(84, 32);
             label20.TabIndex = 10;
             label20.Text = "_______";
-            // 
-            // label57
-            // 
-            label57.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label57.AutoSize = true;
-            label57.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label57.ForeColor = Color.Red;
-            label57.Location = new Point(811, 63);
-            label57.Name = "label57";
-            label57.Size = new Size(64, 32);
-            label57.TabIndex = 10;
-            label57.Text = "_____";
             // 
             // label4
             // 
@@ -323,7 +367,7 @@
             label4.Cursor = Cursors.Hand;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(668, 55);
+            label4.Location = new Point(738, 55);
             label4.Name = "label4";
             label4.Size = new Size(69, 32);
             label4.TabIndex = 2;
@@ -337,7 +381,7 @@
             label56.AutoSize = true;
             label56.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label56.ForeColor = Color.Red;
-            label56.Location = new Point(673, 63);
+            label56.Location = new Point(753, 63);
             label56.Name = "label56";
             label56.Size = new Size(54, 32);
             label56.TabIndex = 9;
@@ -353,6 +397,7 @@
             label3.Size = new Size(80, 32);
             label3.TabIndex = 1;
             label3.Text = "Home";
+            label3.Click += label3_Click;
             // 
             // label41
             // 
@@ -370,7 +415,7 @@
             pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1326, 55);
+            pictureBox6.Location = new Point(1466, 55);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(26, 30);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -400,18 +445,22 @@
             panel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel3.Location = new Point(0, 64);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1436, 838);
+            panel3.Size = new Size(1517, 838);
             panel3.TabIndex = 2;
             panel3.Paint += panel3_Paint;
             // 
             // panel7
             // 
             panel7.AutoSize = true;
+            panel7.Controls.Add(pictureBox5);
+            panel7.Controls.Add(label16);
+            panel7.Controls.Add(label23);
+            panel7.Controls.Add(label18);
+            panel7.Controls.Add(label22);
+            panel7.Controls.Add(label17);
+            panel7.Controls.Add(label21);
             panel7.Controls.Add(pictureBox13);
             panel7.Controls.Add(pictureBox12);
-            panel7.Controls.Add(label18);
-            panel7.Controls.Add(label17);
-            panel7.Controls.Add(label16);
             panel7.Controls.Add(label7);
             panel7.Controls.Add(label8);
             panel7.Controls.Add(label54);
@@ -433,16 +482,109 @@
             panel7.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             panel7.Location = new Point(5, 312);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1427, 5130);
+            panel7.Size = new Size(1567, 5130);
             panel7.TabIndex = 3;
             panel7.Paint += panel7_Paint_1;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(9, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(1491, 835);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Cursor = Cursors.Hand;
+            label16.ForeColor = Color.Silver;
+            label16.Location = new Point(242, 2225);
+            label16.Name = "label16";
+            label16.Size = new Size(164, 45);
+            label16.TabIndex = 36;
+            label16.Text = "Best Sales";
+            label16.Click += label16_Click_1;
+            label16.MouseEnter += label16_MouseEnter;
+            label16.MouseLeave += label16_MouseLeave;
+            // 
+            // label23
+            // 
+            label23.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.ForeColor = Color.Red;
+            label23.Location = new Point(273, 2244);
+            label23.Name = "label23";
+            label23.Size = new Size(134, 32);
+            label23.TabIndex = 44;
+            label23.Text = "____________";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.BackColor = Color.Transparent;
+            label18.Cursor = Cursors.Hand;
+            label18.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.Silver;
+            label18.Location = new Point(1178, 2219);
+            label18.Name = "label18";
+            label18.Size = new Size(157, 45);
+            label18.TabIndex = 38;
+            label18.Text = "Hot Sales";
+            label18.Click += label18_Click;
+            label18.MouseEnter += label18_MouseEnter;
+            label18.MouseLeave += label18_MouseLeave;
+            // 
+            // label22
+            // 
+            label22.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.ForeColor = Color.Red;
+            label22.Location = new Point(1218, 2239);
+            label22.Name = "label22";
+            label22.Size = new Size(124, 32);
+            label22.TabIndex = 43;
+            label22.Text = "___________";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.Transparent;
+            label17.Cursor = Cursors.Hand;
+            label17.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.Black;
+            label17.Location = new Point(668, 2222);
+            label17.Name = "label17";
+            label17.Size = new Size(202, 45);
+            label17.TabIndex = 37;
+            label17.Text = "New Arrivals";
+            label17.Click += label17_Click;
+            label17.MouseEnter += label17_MouseEnter;
+            label17.MouseLeave += label17_MouseLeave;
+            // 
+            // label21
+            // 
+            label21.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label21.AutoSize = true;
+            label21.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label21.ForeColor = Color.Red;
+            label21.Location = new Point(714, 2243);
+            label21.Name = "label21";
+            label21.Size = new Size(164, 32);
+            label21.TabIndex = 42;
+            label21.Text = "_______________";
+            label21.Click += label21_Click;
             // 
             // pictureBox13
             // 
             pictureBox13.BackColor = Color.FromArgb(238, 238, 238);
             pictureBox13.Cursor = Cursors.Hand;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(98, 3619);
+            pictureBox13.Location = new Point(98, 3604);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(229, 107);
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
@@ -454,49 +596,10 @@
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
             pictureBox12.Location = new Point(6, 3062);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(1412, 800);
+            pictureBox12.Size = new Size(1481, 815);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 40;
             pictureBox12.TabStop = false;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.BackColor = Color.Transparent;
-            label18.Cursor = Cursors.Hand;
-            label18.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.ForeColor = SystemColors.ControlDark;
-            label18.Location = new Point(1062, 2219);
-            label18.Name = "label18";
-            label18.Size = new Size(157, 45);
-            label18.TabIndex = 38;
-            label18.Text = "Hot Sales";
-            label18.Click += label18_Click;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.Transparent;
-            label17.Cursor = Cursors.Hand;
-            label17.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.Black;
-            label17.Location = new Point(602, 2221);
-            label17.Name = "label17";
-            label17.Size = new Size(202, 45);
-            label17.TabIndex = 37;
-            label17.Text = "New Arrivals";
-            label17.Click += label17_Click;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Cursor = Cursors.Hand;
-            label16.Location = new Point(209, 2228);
-            label16.Name = "label16";
-            label16.Size = new Size(164, 45);
-            label16.TabIndex = 36;
-            label16.Text = "Best Sales";
-            label16.Click += label16_Click_1;
             // 
             // label7
             // 
@@ -504,7 +607,7 @@
             label7.BackColor = Color.FromArgb(243, 242, 238);
             label7.Font = new Font("Open Sans Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(86, 268);
+            label7.Location = new Point(124, 273);
             label7.Name = "label7";
             label7.Size = new Size(214, 27);
             label7.TabIndex = 0;
@@ -517,7 +620,7 @@
             label8.BackColor = Color.FromArgb(243, 242, 238);
             label8.Font = new Font("MS Reference Sans Serif", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(77, 341);
+            label8.Location = new Point(110, 341);
             label8.Name = "label8";
             label8.Size = new Size(421, 110);
             label8.TabIndex = 1;
@@ -529,7 +632,7 @@
             label54.BackColor = Color.FromArgb(243, 242, 238);
             label54.Cursor = Cursors.Hand;
             label54.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label54.Location = new Point(0, 362);
+            label54.Location = new Point(24, 386);
             label54.Name = "label54";
             label54.Size = new Size(54, 65);
             label54.TabIndex = 3;
@@ -542,7 +645,7 @@
             label53.Cursor = Cursors.Hand;
             label53.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label53.ForeColor = SystemColors.ControlDarkDark;
-            label53.Location = new Point(1359, 362);
+            label53.Location = new Point(1433, 354);
             label53.Name = "label53";
             label53.Size = new Size(54, 65);
             label53.TabIndex = 2;
@@ -565,7 +668,7 @@
             label9.BackColor = Color.FromArgb(243, 242, 238);
             label9.Font = new Font("Open Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(77, 482);
+            label9.Location = new Point(124, 481);
             label9.Name = "label9";
             label9.Size = new Size(544, 48);
             label9.TabIndex = 2;
@@ -575,9 +678,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(3, 3);
+            pictureBox7.Location = new Point(7, 3);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(1410, 807);
+            pictureBox7.Size = new Size(1491, 835);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 0;
             pictureBox7.TabStop = false;
@@ -595,9 +698,9 @@
             panel15.Controls.Add(pictureBox31);
             panel15.Controls.Add(label5);
             panel15.Controls.Add(pictureBox30);
-            panel15.Location = new Point(6, 3912);
+            panel15.Location = new Point(6, 3897);
             panel15.Name = "panel15";
-            panel15.Size = new Size(1412, 748);
+            panel15.Size = new Size(1481, 763);
             panel15.TabIndex = 35;
             panel15.Paint += panel15_Paint;
             // 
@@ -605,7 +708,7 @@
             // 
             pictureBox32.Cursor = Cursors.Hand;
             pictureBox32.Image = (Image)resources.GetObject("pictureBox32.Image");
-            pictureBox32.Location = new Point(753, 530);
+            pictureBox32.Location = new Point(783, 492);
             pictureBox32.Name = "pictureBox32";
             pictureBox32.Size = new Size(241, 65);
             pictureBox32.SizeMode = PictureBoxSizeMode.Zoom;
@@ -617,7 +720,7 @@
             label40.AutoSize = true;
             label40.Font = new Font("Tw Cen MT Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label40.ForeColor = Color.Red;
-            label40.Location = new Point(768, 157);
+            label40.Location = new Point(798, 119);
             label40.Name = "label40";
             label40.Size = new Size(168, 32);
             label40.TabIndex = 8;
@@ -628,7 +731,7 @@
             label39.AutoSize = true;
             label39.Font = new Font("Segoe UI Semibold", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label39.ForeColor = Color.Black;
-            label39.Location = new Point(753, 220);
+            label39.Location = new Point(783, 182);
             label39.Name = "label39";
             label39.Size = new Size(493, 120);
             label39.TabIndex = 7;
@@ -638,7 +741,7 @@
             // 
             label38.AutoSize = true;
             label38.Font = new Font("Segoe UI", 10F);
-            label38.Location = new Point(1072, 445);
+            label38.Location = new Point(1102, 407);
             label38.Name = "label38";
             label38.Size = new Size(85, 28);
             label38.TabIndex = 6;
@@ -648,7 +751,7 @@
             // 
             label37.AutoSize = true;
             label37.Font = new Font("Segoe UI", 10F);
-            label37.Location = new Point(966, 445);
+            label37.Location = new Point(996, 407);
             label37.Name = "label37";
             label37.Size = new Size(82, 28);
             label37.TabIndex = 5;
@@ -658,7 +761,7 @@
             // 
             label36.AutoSize = true;
             label36.Font = new Font("Segoe UI", 10F);
-            label36.Location = new Point(868, 445);
+            label36.Location = new Point(898, 407);
             label36.Name = "label36";
             label36.Size = new Size(64, 28);
             label36.TabIndex = 4;
@@ -668,7 +771,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 10F);
-            label34.Location = new Point(769, 445);
+            label34.Location = new Point(799, 407);
             label34.Name = "label34";
             label34.Size = new Size(54, 28);
             label34.TabIndex = 3;
@@ -678,7 +781,7 @@
             // 
             pictureBox31.Cursor = Cursors.Hand;
             pictureBox31.Image = (Image)resources.GetObject("pictureBox31.Image");
-            pictureBox31.Location = new Point(471, 103);
+            pictureBox31.Location = new Point(531, 86);
             pictureBox31.Name = "pictureBox31";
             pictureBox31.Size = new Size(131, 128);
             pictureBox31.SizeMode = PictureBoxSizeMode.Zoom;
@@ -690,7 +793,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(753, 356);
+            label5.Location = new Point(783, 318);
             label5.Name = "label5";
             label5.Size = new Size(412, 74);
             label5.TabIndex = 1;
@@ -701,7 +804,7 @@
             // 
             pictureBox30.Cursor = Cursors.Hand;
             pictureBox30.Image = (Image)resources.GetObject("pictureBox30.Image");
-            pictureBox30.Location = new Point(74, 136);
+            pictureBox30.Location = new Point(134, 119);
             pictureBox30.Name = "pictureBox30";
             pictureBox30.Size = new Size(528, 545);
             pictureBox30.SizeMode = PictureBoxSizeMode.Zoom;
@@ -730,7 +833,7 @@
             panel23.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel23.Location = new Point(0, 4713);
             panel23.Name = "panel23";
-            panel23.Size = new Size(1427, 417);
+            panel23.Size = new Size(1567, 417);
             panel23.TabIndex = 30;
             // 
             // label55
@@ -1028,7 +1131,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.White;
-            ClientSize = new Size(1436, 912);
+            ClientSize = new Size(1517, 912);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -1049,12 +1152,16 @@
             panel4.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            AnC.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -1095,7 +1202,6 @@
         private Panel panel3;
         private System.Windows.Forms.Timer timer1;
         private Label label41;
-        private Label label57;
         private Label label56;
         private Panel panel7;
         private Label label18;
@@ -1148,5 +1254,13 @@
         private PictureBox pictureBox13;
         private Label label19;
         private Label label20;
+        private Label label21;
+        private Label label23;
+        private Label label22;
+        private Panel panel6;
+        private Label label24;
+        private Panel AnC;
+        private Label label25;
+        private PictureBox pictureBox5;
     }
 }

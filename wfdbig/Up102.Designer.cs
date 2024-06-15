@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Up102));
             panel6 = new Panel();
+            lblpname2 = new Label();
+            txtPrice1 = new Label();
             cb = new CheckBox();
             textBox3 = new TextBox();
             txtq = new TextBox();
@@ -57,6 +59,8 @@
             // 
             // panel6
             // 
+            panel6.Controls.Add(lblpname2);
+            panel6.Controls.Add(txtPrice1);
             panel6.Controls.Add(cb);
             panel6.Controls.Add(textBox3);
             panel6.Controls.Add(txtq);
@@ -77,7 +81,26 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(946, 355);
             panel6.TabIndex = 2;
-            panel6.Paint += panel6_Paint;
+            // 
+            // lblpname2
+            // 
+            lblpname2.AutoSize = true;
+            lblpname2.ForeColor = Color.White;
+            lblpname2.Location = new Point(460, 276);
+            lblpname2.Name = "lblpname2";
+            lblpname2.Size = new Size(89, 32);
+            lblpname2.TabIndex = 46;
+            lblpname2.Text = "pname";
+            // 
+            // txtPrice1
+            // 
+            txtPrice1.AutoSize = true;
+            txtPrice1.ForeColor = Color.White;
+            txtPrice1.Location = new Point(757, 276);
+            txtPrice1.Name = "txtPrice1";
+            txtPrice1.Size = new Size(76, 32);
+            txtPrice1.TabIndex = 43;
+            txtPrice1.Text = "label1";
             // 
             // cb
             // 
@@ -123,6 +146,7 @@
             up.SizeMode = PictureBoxSizeMode.Zoom;
             up.TabIndex = 38;
             up.TabStop = false;
+            up.Click += dec;
             // 
             // dowm
             // 
@@ -135,6 +159,7 @@
             dowm.SizeMode = PictureBoxSizeMode.Zoom;
             dowm.TabIndex = 39;
             dowm.TabStop = false;
+            dowm.Click += inc;
             // 
             // textBox1
             // 
@@ -153,9 +178,9 @@
             label5.ForeColor = Color.Black;
             label5.Location = new Point(657, 121);
             label5.Name = "label5";
-            label5.Size = new Size(84, 28);
+            label5.Size = new Size(58, 28);
             label5.TabIndex = 37;
-            label5.Text = "-16.67%";
+            label5.Text = "-25%";
             // 
             // label24
             // 
@@ -168,7 +193,7 @@
             label24.Name = "label24";
             label24.Size = new Size(85, 28);
             label24.TabIndex = 36;
-            label24.Text = "Rs 3,000";
+            label24.Text = "Rs 2,000";
             // 
             // label23
             // 
@@ -178,9 +203,9 @@
             label23.ForeColor = Color.Red;
             label23.Location = new Point(657, 45);
             label23.Name = "label23";
-            label23.Size = new Size(101, 30);
+            label23.Size = new Size(98, 30);
             label23.TabIndex = 35;
-            label23.Text = "Rs 2,500 ";
+            label23.Text = "Rs 1,000 ";
             // 
             // pictureBox15
             // 
@@ -237,6 +262,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click_1;
             // 
             // pictureBox7
             // 
@@ -288,5 +314,7 @@
         private PictureBox W;
         private PictureBox pictureBox5;
         private PictureBox pictureBox7;
+        private Label txtPrice1;
+        private Label lblpname2;
     }
 }

@@ -102,9 +102,9 @@
             label24.ForeColor = Color.Black;
             label24.Location = new Point(3, 430);
             label24.Name = "label24";
-            label24.Size = new Size(100, 33);
+            label24.Size = new Size(246, 33);
             label24.TabIndex = 1;
-            label24.Text = "label24";
+            label24.Text = "Vintage moto jacket";
             // 
             // pictureBox19
             // 
@@ -146,18 +146,18 @@
             label1.Name = "label1";
             label1.Size = new Size(110, 33);
             label1.TabIndex = 3;
-            label1.Text = "Rs 1,500";
+            label1.Text = "Rs 1,800";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Open Sans Semibold", 11F, FontStyle.Bold);
             label2.ForeColor = Color.Black;
             label2.Location = new Point(3, 430);
             label2.Name = "label2";
-            label2.Size = new Size(86, 33);
+            label2.Size = new Size(307, 30);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Denime Long Skirts Women";
             // 
             // pictureBox2
             // 
@@ -208,9 +208,9 @@
             label4.ForeColor = Color.Black;
             label4.Location = new Point(3, 430);
             label4.Name = "label4";
-            label4.Size = new Size(86, 33);
+            label4.Size = new Size(291, 33);
             label4.TabIndex = 1;
-            label4.Text = "label4";
+            label4.Text = "Vintage disattach jacket";
             // 
             // pictureBox4
             // 
@@ -252,7 +252,7 @@
             label5.Name = "label5";
             label5.Size = new Size(110, 33);
             label5.TabIndex = 3;
-            label5.Text = "Rs 1,500";
+            label5.Text = "Rs 1,200";
             // 
             // label6
             // 
@@ -261,9 +261,9 @@
             label6.ForeColor = Color.Black;
             label6.Location = new Point(3, 430);
             label6.Name = "label6";
-            label6.Size = new Size(86, 33);
+            label6.Size = new Size(233, 33);
             label6.TabIndex = 1;
-            label6.Text = "label6";
+            label6.Text = "Cargo baggy pants ";
             // 
             // pictureBox6
             // 

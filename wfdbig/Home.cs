@@ -3,6 +3,7 @@ using System.Diagnostics;
 using wfdbig.Properties;
 using static System.Windows.Forms.Design.AxImporter;
 
+
 namespace wfdbig
 {
     public partial class Home : Form
@@ -18,7 +19,7 @@ namespace wfdbig
         private readonly _1options optionsPanel1;
         private readonly _2options optionsPanel2;
         private readonly _3options optionsPanel3;
-
+      
 
 
         public Home()
@@ -37,7 +38,7 @@ namespace wfdbig
 
 
             label56.ForeColor = Color.Transparent;
-            label57.ForeColor = Color.Transparent;
+
 
             label4.MouseEnter += label4_MouseEnter;
             label4.MouseLeave += label4_MouseLeave;
@@ -85,6 +86,14 @@ namespace wfdbig
             label16.Click += label16_Click;
             label17.Click += label17_Click;
             label18.Click += label18_Click;
+
+            label20.Visible = false;
+            label21.Visible = true;
+            label22.Visible = false;
+            label23.Visible = false;
+
+            AnC.Visible = false;
+            
 
         }
 
@@ -194,7 +203,7 @@ namespace wfdbig
             pictureBox11.MouseLeave += pictureBox11_MouseLeave;
 
 
-
+           
 
 
         }
@@ -405,13 +414,13 @@ namespace wfdbig
 
         private void label6_MouseEnter(object sender, EventArgs e)
         {
-            label57.ForeColor = Color.Red;
+            label20.Visible = true;
             label41.ForeColor = Color.Transparent;
         }
 
         private void label6_MouseLeave(object sender, EventArgs e)
         {
-            label57.ForeColor = Color.Transparent;
+            label20.Visible = false;
             label41.ForeColor = Color.Red;
         }
 
@@ -438,9 +447,14 @@ namespace wfdbig
 
         {
 
+            label21.Visible = false;
+            label22.Visible = false;
+            label23.Visible = true;
+
+
             label16.ForeColor = Color.Black;
-            label17.ForeColor = Color.Gray;
-            label18.ForeColor = Color.Gray;
+            label17.ForeColor = Color.Silver;
+            label18.ForeColor = Color.Silver;
 
             optionsPanel1.Visible = false;
             optionsPanel2.Visible = true;
@@ -451,9 +465,14 @@ namespace wfdbig
 
         private void label17_Click(object sender, EventArgs e)
         {
-            label16.ForeColor = Color.Gray;
+            label21.Visible = true;
+            label22.Visible = false;
+            label23.Visible = false;
+
+
+            label16.ForeColor = Color.Silver;
             label17.ForeColor = Color.Black;
-            label18.ForeColor = Color.Gray;
+            label18.ForeColor = Color.Silver;
 
             optionsPanel1.Visible = true;
 
@@ -463,8 +482,13 @@ namespace wfdbig
 
         private void label18_Click(object sender, EventArgs e)
         {
-            label16.ForeColor = Color.Gray;
-            label17.ForeColor = Color.Gray;
+            label21.Visible = false;
+            label22.Visible = true;
+            label23.Visible = false;
+
+
+            label16.ForeColor = Color.Silver;
+            label17.ForeColor = Color.Silver;
             label18.ForeColor = Color.Black;
             optionsPanel1.Visible = false;
             optionsPanel2.Visible = false;
@@ -481,6 +505,7 @@ namespace wfdbig
 
         private void label6_Click(object sender, EventArgs e)
         {
+            label20.Visible = true;
             Contact gog = new Contact();
             gog.Show();
             this.Hide();
@@ -514,6 +539,95 @@ namespace wfdbig
             sign wkwk = new sign();
             wkwk.Show();
             this.Hide();
+        }
+
+        private void label16_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_MouseEnter(object sender, EventArgs e)
+        {
+            AnC.Visible = true;
+            label41.ForeColor = Color.Transparent;
+
+
+        }
+
+        private void label19_MouseLeave(object sender, EventArgs e)
+        {
+
+            label41.ForeColor = Color.Red;
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AnC_MouseEnter(object sender, EventArgs e)
+        {
+            AnC.Visible = true;
+            label56.ForeColor = Color.Transparent;
+        }
+
+        private void AnC_MouseLeave(object sender, EventArgs e)
+        {
+
+            label41.ForeColor = Color.Red;
+
+
+        }
+
+        private void label19_Click_1(object sender, EventArgs e)
+        {
+            label41.ForeColor = Color.Transparent;
+            AnC.Visible = !AnC.Visible;
+
+        }
+
+        private void AnC_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+            About ok = new About();
+            ok.Show();
+            this.Hide();
+
         }
     }
 }

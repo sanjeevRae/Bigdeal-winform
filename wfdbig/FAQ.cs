@@ -324,6 +324,20 @@ namespace wfdbig
             ok.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            sign ok = new sign();
+            ok.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Cart ok = new Cart();
+            ok.Show();
+            this.Hide();
+        }
     }
 }
 

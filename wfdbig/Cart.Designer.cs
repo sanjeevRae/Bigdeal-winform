@@ -57,15 +57,15 @@
             panel7 = new Panel();
             FLP = new FlowLayoutPanel();
             panel9 = new Panel();
-            label12 = new Label();
+            voucher = new Label();
             textBox2 = new TextBox();
             label8 = new Label();
-            label10 = new Label();
+            shtq = new Label();
             label9 = new Label();
             okok = new PictureBox();
             pictureBox8 = new PictureBox();
             label11 = new Label();
-            label13 = new Label();
+            alltotal = new Label();
             panel23 = new Panel();
             label55 = new Label();
             pictureBox41 = new PictureBox();
@@ -82,7 +82,6 @@
             label42 = new Label();
             pictureBox40 = new PictureBox();
             pictureBox28 = new PictureBox();
-            pictureBox5 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -101,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox41).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox40).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -193,9 +191,10 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(1343, 17);
             label1.Name = "label1";
-            label1.Size = new Size(85, 28);
+            label1.Size = new Size(104, 28);
             label1.TabIndex = 1;
-            label1.Text = "SIGN IN";
+            label1.Text = "SIGN OUT";
+            label1.Click += label1_Click;
             // 
             // lable1
             // 
@@ -360,6 +359,7 @@
             aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             aboutUsToolStripMenuItem.Size = new Size(275, 40);
             aboutUsToolStripMenuItem.Text = "About Us";
+            aboutUsToolStripMenuItem.Click += aboutUsToolStripMenuItem_Click;
             // 
             // shoppingCartToolStripMenuItem
             // 
@@ -383,7 +383,6 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(1570, 830);
             panel3.TabIndex = 2;
-            panel3.Paint += panel3_Paint;
             // 
             // panel8
             // 
@@ -405,10 +404,10 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(1556, 2528);
             panel7.TabIndex = 3;
-            panel7.Paint += panel7_Paint_1;
             // 
             // FLP
             // 
+            FLP.AutoScroll = true;
             FLP.Location = new Point(3, 3);
             FLP.Name = "FLP";
             FLP.Size = new Size(971, 2099);
@@ -417,32 +416,30 @@
             // panel9
             // 
             panel9.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel9.Controls.Add(pictureBox5);
-            panel9.Controls.Add(label12);
+            panel9.Controls.Add(voucher);
             panel9.Controls.Add(textBox2);
             panel9.Controls.Add(label8);
-            panel9.Controls.Add(label10);
+            panel9.Controls.Add(shtq);
             panel9.Controls.Add(label9);
             panel9.Controls.Add(okok);
             panel9.Controls.Add(pictureBox8);
             panel9.Controls.Add(label11);
-            panel9.Controls.Add(label13);
+            panel9.Controls.Add(alltotal);
             panel9.Location = new Point(990, 30);
             panel9.Name = "panel9";
             panel9.Size = new Size(549, 516);
             panel9.TabIndex = 32;
             // 
-            // label12
+            // voucher
             // 
-            label12.AutoSize = true;
-            label12.Cursor = Cursors.Hand;
-            label12.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label12.ForeColor = Color.OrangeRed;
-            label12.Location = new Point(383, 233);
-            label12.Name = "label12";
-            label12.Size = new Size(41, 30);
-            label12.TabIndex = 35;
-            label12.Text = "Rs.";
+            voucher.AutoSize = true;
+            voucher.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            voucher.Location = new Point(36, 160);
+            voucher.Name = "voucher";
+            voucher.Size = new Size(229, 32);
+            voucher.TabIndex = 0;
+            voucher.Text = "Enter Voucher Code";
+            voucher.Click += voucher_Click;
             // 
             // textBox2
             // 
@@ -450,13 +447,12 @@
             textBox2.Cursor = Cursors.IBeam;
             textBox2.Font = new Font("Segoe UI", 12F);
             textBox2.ForeColor = Color.Gray;
-            textBox2.Location = new Point(24, 147);
+            textBox2.Location = new Point(24, 149);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(330, 52);
+            textBox2.Size = new Size(311, 52);
             textBox2.TabIndex = 38;
-            textBox2.Text = "Enter Voucher Code";
-            textBox2.TextChanged += textBox2_TextChanged;
+            textBox2.Click += textBox2_Click;
             // 
             // label8
             // 
@@ -470,17 +466,17 @@
             label8.TabIndex = 33;
             label8.Text = "Order Summary";
             // 
-            // label10
+            // shtq
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI", 9F);
-            label10.ForeColor = Color.Gray;
-            label10.Location = new Point(96, 85);
-            label10.Name = "label10";
-            label10.Size = new Size(80, 25);
-            label10.TabIndex = 37;
-            label10.Text = "(0 items)";
+            shtq.AutoSize = true;
+            shtq.BackColor = Color.Transparent;
+            shtq.Font = new Font("Segoe UI", 9F);
+            shtq.ForeColor = Color.Gray;
+            shtq.Location = new Point(99, 85);
+            shtq.Name = "shtq";
+            shtq.Size = new Size(80, 25);
+            shtq.TabIndex = 37;
+            shtq.Text = "(0 items)";
             // 
             // label9
             // 
@@ -498,23 +494,25 @@
             // 
             okok.Cursor = Cursors.Hand;
             okok.Image = (Image)resources.GetObject("okok.Image");
-            okok.Location = new Point(51, 330);
+            okok.Location = new Point(19, 329);
             okok.Name = "okok";
-            okok.Size = new Size(22, 37);
+            okok.Size = new Size(470, 64);
             okok.SizeMode = PictureBoxSizeMode.Zoom;
             okok.TabIndex = 34;
             okok.TabStop = false;
+            okok.Click += okok_Click;
             // 
             // pictureBox8
             // 
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(360, 147);
+            pictureBox8.Location = new Point(348, 147);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(146, 54);
+            pictureBox8.Size = new Size(138, 54);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 34;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // label11
             // 
@@ -527,17 +525,16 @@
             label11.TabIndex = 37;
             label11.Text = "Total";
             // 
-            // label13
+            // alltotal
             // 
-            label13.AutoSize = true;
-            label13.Cursor = Cursors.Hand;
-            label13.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label13.ForeColor = Color.OrangeRed;
-            label13.Location = new Point(421, 233);
-            label13.Name = "label13";
-            label13.Size = new Size(45, 30);
-            label13.TabIndex = 35;
-            label13.Text = "xyz";
+            alltotal.AutoSize = true;
+            alltotal.Cursor = Cursors.Hand;
+            alltotal.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            alltotal.ForeColor = Color.OrangeRed;
+            alltotal.Location = new Point(369, 233);
+            alltotal.Name = "alltotal";
+            alltotal.Size = new Size(0, 30);
+            alltotal.TabIndex = 35;
             // 
             // panel23
             // 
@@ -728,18 +725,6 @@
             pictureBox28.TabIndex = 0;
             pictureBox28.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            pictureBox5.Cursor = Cursors.Hand;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(51, 330);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(470, 62);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 39;
-            pictureBox5.TabStop = false;
-            pictureBox5.Click += pictureBox5_Click_1;
-            // 
             // Cart
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -783,7 +768,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox41).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox40).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -833,15 +817,15 @@
         private PictureBox pictureBox28;
         private FlowLayoutPanel FLP;
         private Panel panel9;
-        private Label label12;
         private TextBox textBox2;
         private Label label8;
-        private Label label10;
+        private Label shtq;
         private Label label9;
         private PictureBox okok;
         private PictureBox pictureBox8;
         private Label label11;
-        private Label label13;
-        private PictureBox pictureBox5;
+        private Label alltotal;
+       // private PictureBox cartgo;
+        private Label voucher;
     }
 }

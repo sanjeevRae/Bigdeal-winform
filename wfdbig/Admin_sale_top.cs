@@ -16,5 +16,10 @@ namespace wfdbig
         {
             InitializeComponent();
         }
+
+        public void UpdateAdminName(string adminName)
+        {
+           sales_admin.Text = adminName;
+        }
     }
 }

@@ -59,7 +59,7 @@
             panel8 = new Panel();
             pictureBox11 = new PictureBox();
             pictureBox14 = new PictureBox();
-            name = new TextBox();
+            txtname = new TextBox();
             txtemail = new TextBox();
             txtmessage = new TextBox();
             pictureBox10 = new PictureBox();
@@ -206,9 +206,10 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(1171, 17);
             label1.Name = "label1";
-            label1.Size = new Size(85, 28);
+            label1.Size = new Size(104, 28);
             label1.TabIndex = 1;
-            label1.Text = "SIGN IN";
+            label1.Text = "SIGN OUT";
+            label1.Click += label1_Click;
             // 
             // lable1
             // 
@@ -357,7 +358,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { pagesToolStripMenuItem });
             menuStrip1.Location = new Point(784, 76);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(101, 40);
+            menuStrip1.Size = new Size(281, 40);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -372,6 +373,7 @@
             pagesToolStripMenuItem.ShowShortcutKeys = false;
             pagesToolStripMenuItem.Size = new Size(93, 36);
             pagesToolStripMenuItem.Text = "Pages";
+            pagesToolStripMenuItem.MouseEnter += pagesToolStripMenuItem_MouseEnter;
             pagesToolStripMenuItem.MouseLeave += pagesToolStripMenuItem_MouseLeave;
             pagesToolStripMenuItem.MouseHover += pagesToolStripMenuItem_MouseHover;
             // 
@@ -382,6 +384,7 @@
             aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             aboutUsToolStripMenuItem.Size = new Size(275, 40);
             aboutUsToolStripMenuItem.Text = "About Us";
+            aboutUsToolStripMenuItem.Click += aboutUsToolStripMenuItem_Click;
             // 
             // shoppingCartToolStripMenuItem
             // 
@@ -426,7 +429,7 @@
             // 
             panel8.Controls.Add(pictureBox11);
             panel8.Controls.Add(pictureBox14);
-            panel8.Controls.Add(name);
+            panel8.Controls.Add(txtname);
             panel8.Controls.Add(txtemail);
             panel8.Controls.Add(txtmessage);
             panel8.Controls.Add(pictureBox10);
@@ -458,20 +461,20 @@
             pictureBox14.TabIndex = 34;
             pictureBox14.TabStop = false;
             // 
-            // name
+            // txtname
             // 
-            name.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            name.ForeColor = Color.Green;
-            name.Location = new Point(816, 205);
-            name.Multiline = true;
-            name.Name = "name";
-            name.Size = new Size(535, 64);
-            name.TabIndex = 33;
-            name.Text = " Name";
-            name.TextChanged += name_TextChanged;
-            name.Enter += name_Enter;
-            name.Leave += name_Leave;
-            name.Validating += name_Validating;
+            txtname.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtname.ForeColor = Color.Green;
+            txtname.Location = new Point(816, 205);
+            txtname.Multiline = true;
+            txtname.Name = "txtname";
+            txtname.Size = new Size(535, 64);
+            txtname.TabIndex = 33;
+            txtname.Text = " Name";
+            txtname.TextChanged += name_TextChanged;
+            txtname.Enter += name_Enter;
+            txtname.Leave += name_Leave;
+            txtname.Validating += name_Validating;
             // 
             // txtemail
             // 
@@ -918,7 +921,7 @@
         private Label label8;
         private TextBox txtemail;
         private PictureBox pictureBox5;
-        private TextBox name;
+        private TextBox txtname;
         private PictureBox pictureBox9;
         private PictureBox pictureBox8;
         private PictureBox pictureBox10;

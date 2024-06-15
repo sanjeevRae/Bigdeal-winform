@@ -21,6 +21,7 @@ namespace wfdbig
         private Admin_sale_top admin_sale_top;
         private Admin_settings_top admin_settings_top;
         private Admin_transaction_top admin_transaction_top;
+     
 
         private Dashboard dashboard;
         private Projects projects;
@@ -57,6 +58,7 @@ namespace wfdbig
             admin_sale_top = new Admin_sale_top();
             admin_settings_top = new Admin_settings_top();
             admin_transaction_top = new Admin_transaction_top();
+            
 
 
             dashboard = new Dashboard();
@@ -86,6 +88,20 @@ namespace wfdbig
 
             admin_profile.SetAdminForm(this);
 
+
+
+        }
+
+        public void UpdateAdminNameInLabels(string adminName)
+        {
+            admin_dash_top.UpdateAdminName(adminName);
+          
+            admin_project_top.UpdateAdminName(adminName);
+            admin_sale_top.UpdateAdminName(adminName);
+            admin_settings_top.UpdateAdminName(adminName);
+            admin_transaction_top.UpdateAdminName(adminName);
+
+            lblAdmin.Text = adminName;
         }
 
         public void SetAdminPic(Image image)

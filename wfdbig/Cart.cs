@@ -1,65 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
-using System.Diagnostics;
-
-using static System.Windows.Forms.Design.AxImporter;
 using wfdbig.Properties;
+using wfdbig;
+using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+
+
 
 namespace wfdbig
 {
     public partial class Cart : Form
-
-
     {
-
         private bool isDragging;
         private Point lastMousePosition;
 
-        private List<Up103> removedControls = new List<Up103>();
-
-
-
+        private List<UserControl> cartControls = new List<UserControl>();
+        private HashSet<string> productIdsInCart = new HashSet<string>();
+        private string connectionString = "server=localhost;user=root;database=bigdeal;port=3306;password=@Mysqlserver;";
 
 
         public Cart()
         {
             InitializeComponent();
 
-
-
             this.MouseDown += Cart_MouseDown;
             this.MouseMove += Cart_MouseMove;
             this.MouseUp += Cart_MouseUp;
 
             pictureBox1.BackColor = Color.Transparent;
-
             pictureBox1.MouseEnter += pictureBox1_MouseEnter;
             pictureBox1.MouseLeave += pictureBox1_MouseLeave;
-
 
             label56.ForeColor = Color.Transparent;
             label57.ForeColor = Color.Transparent;
 
-            label4.MouseEnter += label4_MouseEnter;
-            label4.MouseLeave += label4_MouseLeave;
-            label6.MouseEnter += label6_MouseEnter;
-            label6.MouseLeave += label6_MouseLeave;
-
-
-            pagesToolStripMenuItem.MouseHover += pagesToolStripMenuItem_MouseHover;
-            pagesToolStripMenuItem.MouseLeave += pagesToolStripMenuItem_MouseLeave;
-
-
-
-
-            pictureBox3.Click += MinimizePictureBox_Click;
-            pictureBox2.Click += MaximizePictureBox_Click;
 
             AddUp103ToCart();
-
             AddUp101ToCart();
-
             AddUp102ToCart();
+            LoadCartState();
+
 
 
 
@@ -68,70 +52,114 @@ namespace wfdbig
 
         public void RemoveUserControlFromCart(UserControl controlToRemove)
         {
-
             FLP.Controls.Remove(controlToRemove);
+            cartControls.Remove(controlToRemove);
+            UpdateTotalPrice();
+            RefreshTotalQuantity();
+
+            if (controlToRemove is IProductIdentifier productIdentifier)
+            {
+                productIdsInCart.Remove(productIdentifier.ProductId);
+                SaveCartState();
+            }
         }
+
+
+
+        private void SaveCartState()
+        {
+
+            using (StreamWriter writer = new StreamWriter("cart_state.txt"))
+            {
+                foreach (string productId in productIdsInCart)
+                {
+                    writer.WriteLine(productId);
+                }
+            }
+        }
+
+
+        private void LoadCartState()
+        {
+            if (File.Exists("cart_state.txt"))
+            {
+                using (StreamReader reader = new StreamReader("cart_state.txt"))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        AddProductToCart(line);
+                    }
+                }
+
+                RefreshTotalQuantity();
+                UpdateTotalPrice();
+            }
+        }
+
+        public void AddProductToCart(string productId)
+        {
+            if (!productIdsInCart.Contains(productId))
+            {
+                switch (productId)
+                {
+                    case "P101":
+                        AddUp101ToCart();
+                        break;
+                    case "P102":
+                        AddUp102ToCart();
+                        break;
+                    case "P103":
+                        AddUp103ToCart();
+                        break;
+
+                }
+
+                productIdsInCart.Add(productId);
+                SaveCartState();
+
+                RefreshTotalQuantity();
+                UpdateTotalPrice();
+            }
+        }
+
+
+
 
         public void AddUp101ToCart()
         {
             Up101 up101Control = new Up101(this);
-            up101Control.Location = new Point(3, 3);
-            up101Control.Size = new Size(946, 355);
-            FLP.Controls.Add(up101Control);
+            AddControlToCart(up101Control);
         }
 
         public void AddUp102ToCart()
         {
-            Up102 up101Control = new Up102();
-            up101Control.Location = new Point(3, 3);
-            up101Control.Size = new Size(946, 355);
-            FLP.Controls.Add(up101Control);
+            Up102 up102Control = new Up102(this);
+            AddControlToCart(up102Control);
         }
-
 
         public void AddUp103ToCart()
         {
-            Up103 up103Control = new Up103();
-            up103Control.Location = new Point(3, 3);
-            up103Control.Size = new Size(946, 355);
-            FLP.Controls.Add(up103Control);
+            Up103 up103Control = new Up103(this);
+            AddControlToCart(up103Control);
         }
 
-        public void RemoveFromCart(Up103 controlToRemove)
+        private void AddControlToCart(UserControl control)
         {
-            FLP.Controls.Remove(controlToRemove);
-            removedControls.Add(controlToRemove);
+            control.Location = new Point(3, 3);
+            control.Size = new Size(946, 355);
+            FLP.Controls.Add(control);
+            cartControls.Add(control);
         }
-
-
-
-
-
-
 
         private void MinimizePictureBox_Click(object sender, EventArgs e)
         {
-
             this.WindowState = FormWindowState.Minimized;
         }
 
         private void MaximizePictureBox_Click(object sender, EventArgs e)
         {
-            // Maximize or restore the form
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-        }
-
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            this.WindowState = this.WindowState == FormWindowState.Maximized ? FormWindowState.Normal : FormWindowState.Maximized;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -139,73 +167,72 @@ namespace wfdbig
             Application.Exit();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-
+            products ok = new products();
+            ok.Show();
+            this.Hide();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            Home home = new Home();
+            home.Show();
+            this.Hide();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void pictureBox41_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox12_MouseHover(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void Cart_Load(object sender, EventArgs e)
-        {
-            foreach (var control in removedControls)
+            string url = "https://sanjeevrae.github.io/v1/";
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
             {
-                FLP.Controls.Add(control);
-            }
-
+                FileName = url,
+                UseShellExecute = true
+            });
         }
 
-
-
-
-
-        private void pictureBox12_MouseLeave(object sender, EventArgs e)
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
+            pictureBox1.BackColor = Color.Red;
+        }
 
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Transparent;
+        }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            label56.ForeColor = Color.Red;
+            label41.ForeColor = Color.Transparent;
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            label56.ForeColor = Color.Transparent;
+            label41.ForeColor = Color.Red;
+        }
+
+        private void label6_MouseEnter(object sender, EventArgs e)
+        {
+            label57.ForeColor = Color.Red;
+            label41.ForeColor = Color.Transparent;
+        }
+
+        private void label6_MouseLeave(object sender, EventArgs e)
+        {
+            label57.ForeColor = Color.Transparent;
+            label41.ForeColor = Color.Red;
+        }
+
+        private void pagesToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+            pagesToolStripMenuItem.ShowDropDown();
+        }
+
+        private void pagesToolStripMenuItem_MouseLeave(object sender, EventArgs e)
+        {
+            pagesToolStripMenuItem.HideDropDown();
         }
 
         private void Cart_MouseDown(object sender, MouseEventArgs e)
@@ -235,144 +262,149 @@ namespace wfdbig
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        public void UpdateTotalPrice()
         {
-            products ok = new products();
+
+            int totalPrice = cartControls.OfType<IPriceCalculator>().Sum(c => c.TotalPrice);
+
+
+            alltotal.Text = $"Rs {totalPrice}";
+
+            DatabaseHelper.UpdateTotalPrice(totalPrice);
+        }
+
+
+
+        private void cartgo(object sender, EventArgs e)
+        {
+
+        }
+
+        public void RefreshTotalQuantity()
+        {
+            int totalQuantity = cartControls.OfType<IQuantityCounter>().Sum(c => c.QuantityValue);
+            shtq.Text = $"{totalQuantity} items";
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Cart OK = new Cart();
+            OK.Show();
+            this.Hide();
+        }
+
+        public interface IQuantityCounter
+        {
+            int QuantityValue { get; }
+        }
+
+        public interface IPriceCalculator
+        {
+            int TotalPrice { get; }
+        }
+
+        public interface IProductIdentifier
+        {
+            string ProductId { get; }
+        }
+
+        private void up101_CheckBoxChecked(object sender, EventArgs e)
+        {
+            Up101 up101 = sender as Up101;
+            if (up101 != null)
+            {
+                string productName = up101.ProductName;
+                string price = up101.Price;
+
+            }
+        }
+
+        private void Cart_Load(object sender, EventArgs e)
+        {
+            int totalPrice = DatabaseHelper.GetTotalPrice();
+
+        }
+
+        private void okok_Click(object sender, EventArgs e)
+        {
+            Shipping shippingForm = new Shipping();
+
+            foreach (var control in cartControls)
+            {
+                if (control is Up101 up101)
+                {
+                    string productName = up101.ProductName;
+                    string price = up101.Price;
+                    shippingForm.SetItem1P(productName);
+                    shippingForm.SetItem1(price);
+                }
+                else if (control is Up102 up102)
+                {
+                    string productName = up102.ProductName;
+                    string price = up102.Price;
+                    shippingForm.SetItem2P(productName);
+                    shippingForm.SetItem2(price);
+                }
+                else if (control is Up103 up103)
+                {
+                    string productName = up103.ProductName;
+                    string price = up103.Price;
+                    shippingForm.SetItem3P(productName);
+                    shippingForm.SetItem3(price);
+                }
+            }
+
+            shippingForm.Show();
+        }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About ok = new About();
             ok.Show();
             this.Hide();
         }
 
-        private void label16_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-
+            sign OK = new sign();
+            OK.Show();
+            this.Hide();
         }
 
-        private void panel7_Paint_1(object sender, PaintEventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
-
+            Contact contact = new Contact();
+            contact.Show();
+            this.Hide();
         }
 
-        private void label33_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label35_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label34_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
             Home home = new Home();
             home.Show();
             this.Hide();
         }
 
-
-        private void pictureBox41_Click(object sender, EventArgs e)
+        private void voucher_Click(object sender, EventArgs e)
         {
-            string url = "https://sanjeevrae.github.io/v1/";
-            Process.Start(new ProcessStartInfo
+            voucher.Visible = false;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            voucher.Visible = false;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "HAPPY DEAL 2024")
             {
-                FileName = url,
-                UseShellExecute = true
-            });
-        }
-
-
-
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
-        {
-            pictureBox1.BackColor = Color.Red;
-        }
-
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox1.BackColor = Color.Transparent;
-        }
-
-
-        private void label4_MouseEnter(object sender, EventArgs e)
-        {
-            label56.ForeColor = Color.Red;
-            label41.ForeColor = Color.Transparent;
-        }
-
-        private void label4_MouseLeave(object sender, EventArgs e)
-        {
-            label56.ForeColor = Color.Transparent;
-            label41.ForeColor = Color.Red;
-        }
-
-        private void label6_MouseEnter(object sender, EventArgs e)
-        {
-            label57.ForeColor = Color.Red;
-            label41.ForeColor = Color.Transparent;
-        }
-
-        private void label6_MouseLeave(object sender, EventArgs e)
-        {
-            label57.ForeColor = Color.Transparent;
-            label41.ForeColor = Color.Red;
-        }
-
-
-
-        private void pagesToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
-            pagesToolStripMenuItem.ShowDropDown();
-        }
-
-        private void pagesToolStripMenuItem_MouseLeave(object sender, EventArgs e)
-        {
-            pagesToolStripMenuItem.HideDropDown();
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Home ok = new Home();
-            ok.Show();
-            this.Hide();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            Contact wkwk = new Contact();
-            wkwk.Show();
-            this.Hide();
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-           
-        }
-
-        private void pictureBox5_Click_1(object sender, EventArgs e)
-        {
-           
+                MessageBox.Show("You good to go");
+            }
+            else
+            {
+                MessageBox.Show("⚠️ Wrong or Expired Voucher Please Try Again Later !!");
+            }
         }
     }
 }
-

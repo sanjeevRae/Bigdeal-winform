@@ -98,13 +98,13 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Open Sans Semibold", 11F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
             label6.Location = new Point(3, 430);
             label6.Name = "label6";
-            label6.Size = new Size(86, 33);
+            label6.Size = new Size(156, 30);
             label6.TabIndex = 1;
-            label6.Text = "label6";
+            label6.Text = "Adrift Hoodie";
             // 
             // pictureBox6
             // 
@@ -147,18 +147,18 @@
             label3.Name = "label3";
             label3.Size = new Size(110, 33);
             label3.TabIndex = 3;
-            label3.Text = "Rs 1,500";
+            label3.Text = "Rs 1,600";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Open Sans Semibold", 11F, FontStyle.Bold);
             label4.ForeColor = Color.Black;
             label4.Location = new Point(3, 430);
             label4.Name = "label4";
-            label4.Size = new Size(86, 33);
+            label4.Size = new Size(223, 30);
             label4.TabIndex = 1;
-            label4.Text = "label4";
+            label4.Text = "Women's Long Skirt";
             // 
             // pictureBox4
             // 
@@ -199,20 +199,20 @@
             label1.ForeColor = Color.Black;
             label1.Location = new Point(3, 519);
             label1.Name = "label1";
-            label1.Size = new Size(110, 33);
+            label1.Size = new Size(90, 33);
             label1.TabIndex = 3;
-            label1.Text = "Rs 1,500";
+            label1.Text = "Rs 600";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Open Sans Semibold", 11F, FontStyle.Bold);
             label2.ForeColor = Color.Black;
             label2.Location = new Point(3, 430);
             label2.Name = "label2";
-            label2.Size = new Size(86, 33);
+            label2.Size = new Size(309, 30);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Summer Men's Half T-Shirt  ";
             // 
             // pictureBox2
             // 
@@ -254,18 +254,18 @@
             label23.Name = "label23";
             label23.Size = new Size(110, 33);
             label23.TabIndex = 3;
-            label23.Text = "Rs 1,500";
+            label23.Text = "Rs 1,000";
             // 
             // label24
             // 
             label24.AutoSize = true;
-            label24.Font = new Font("Open Sans Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label24.Font = new Font("Open Sans Semibold", 11F, FontStyle.Bold);
             label24.ForeColor = Color.Black;
             label24.Location = new Point(3, 430);
             label24.Name = "label24";
-            label24.Size = new Size(100, 33);
+            label24.Size = new Size(210, 30);
             label24.TabIndex = 1;
-            label24.Text = "label24";
+            label24.Text = "Men's Cargo Pants";
             // 
             // pictureBox19
             // 

@@ -1,3 +1,4 @@
+using System.Numerics;
 using wfdbig.Properties;
 
 namespace wfdbig
@@ -13,7 +14,7 @@ namespace wfdbig
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Admin());
+            Application.Run(new splash());
         }
     }
 }

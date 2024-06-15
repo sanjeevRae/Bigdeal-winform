@@ -37,7 +37,7 @@
             panel2 = new Panel();
             panel4 = new Panel();
             panel11 = new Panel();
-            label15 = new Label();
+            lblAdmin = new Label();
             AdminPic = new PictureBox();
             pictureBox29 = new PictureBox();
             Project_Panel_top = new Panel();
@@ -493,7 +493,7 @@
             // 
             panel4.BackColor = Color.White;
             panel4.Controls.Add(panel11);
-            panel4.Controls.Add(label15);
+            panel4.Controls.Add(lblAdmin);
             panel4.Controls.Add(AdminPic);
             panel4.Controls.Add(pictureBox29);
             panel4.Controls.Add(Project_Panel_top);
@@ -512,17 +512,17 @@
             panel11.Size = new Size(4, 67);
             panel11.TabIndex = 37;
             // 
-            // label15
+            // lblAdmin
             // 
-            label15.AutoSize = true;
-            label15.Cursor = Cursors.Hand;
-            label15.Font = new Font("Tw Cen MT", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.DimGray;
-            label15.Location = new Point(1413, 10);
-            label15.Name = "label15";
-            label15.Size = new Size(84, 30);
-            label15.TabIndex = 34;
-            label15.Text = "Admin ";
+            lblAdmin.AutoSize = true;
+            lblAdmin.Cursor = Cursors.Hand;
+            lblAdmin.Font = new Font("Tw Cen MT", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblAdmin.ForeColor = Color.DimGray;
+            lblAdmin.Location = new Point(1413, 10);
+            lblAdmin.Name = "lblAdmin";
+            lblAdmin.Size = new Size(84, 30);
+            lblAdmin.TabIndex = 34;
+            lblAdmin.Text = "Admin ";
             // 
             // AdminPic
             // 
@@ -4147,7 +4147,7 @@
         private Label label5;
         private Label label6;
         private PictureBox pictureBox29;
-        private Label label15;
+        private Label lblAdmin;
         private PictureBox AdminPic;
         private Panel panel11;
         private Panel panel12;

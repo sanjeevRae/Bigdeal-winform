@@ -15,6 +15,8 @@ using System.Text;
 using MimeKit;
 using System.Timers;
 using wfdbig.Properties;
+using MySql.Data.MySqlClient;
+using System.Xml.Linq;
 
 namespace wfdbig
 {
@@ -32,6 +34,8 @@ namespace wfdbig
         private bool emailChanged = false;
         private bool messageChanged = false;
 
+
+        private string connectionString = "server=localhost;user=root;database=bigdeal;port=3306;password=@Mysqlserver;";
 
 
 
@@ -293,12 +297,12 @@ namespace wfdbig
 
         private void pagesToolStripMenuItem_MouseHover(object sender, EventArgs e)
         {
-            pagesToolStripMenuItem.ShowDropDown();
+
         }
 
         private void pagesToolStripMenuItem_MouseLeave(object sender, EventArgs e)
         {
-            pagesToolStripMenuItem.HideDropDown();
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -316,6 +320,28 @@ namespace wfdbig
 
             try
             {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    try
+                    {
+                        conn.Open();
+                        string query = "INSERT INTO contact (email, name, message) VALUES (@Email, @Name, @Message)";
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@Email", txtemail.Text);
+                            cmd.Parameters.AddWithValue("@Name", txtname.Text);
+                            cmd.Parameters.AddWithValue("@Message", txtmessage.Text);
+                            cmd.ExecuteNonQuery();
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+
+                }
+
                 UserCredential credential;
 
                 using (var stream = new FileStream(@"A:\4th sem\w.deal\client_secret_835106084989-9760750t1a6gj4jnvhn8299lt1r1ohmr.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
@@ -337,7 +363,7 @@ namespace wfdbig
 
                 message.To.Add(new MimeKit.MailboxAddress("Admin: Sanjeev ", "sa.sanzeeprae@gmail.com"));
 
-                message.Subject = "Message from " + name.Text.Trim() + " (" + txtemail.Text.Trim() + ")";
+                message.Subject = "Message from " + txtname.Text.Trim() + " (" + txtemail.Text.Trim() + ")";
 
 
                 var textPart = new MimeKit.TextPart("plain")
@@ -358,6 +384,11 @@ namespace wfdbig
             catch (Exception ex)
             {
                 MessageBox.Show("Failed to send email. Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            {
+
+
             }
         }
 
@@ -392,7 +423,7 @@ namespace wfdbig
 
             if (!nameChanged)
             {
-                name.Text = "";
+                txtname.Text = "";
                 nameChanged = true;
             }
         }
@@ -422,19 +453,19 @@ namespace wfdbig
 
         private void name_Enter(object sender, EventArgs e)
         {
-            name.ForeColor = Color.Black;
+            txtname.ForeColor = Color.Black;
 
         }
 
         private void name_Leave(object sender, EventArgs e)
         {
 
-            name.ForeColor = Color.Green;
+            txtname.ForeColor = Color.Green;
         }
 
         private void name_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            string input = name.Text;
+            string input = txtname.Text;
 
             if (input.Any(char.IsDigit))
             {
@@ -506,6 +537,25 @@ namespace wfdbig
         {
             Contact hih = new Contact();
             hih.Show();
+            this.Hide();
+        }
+
+        private void pagesToolStripMenuItem_MouseEnter(object sender, EventArgs e)
+        {
+            pagesToolStripMenuItem.ShowDropDown();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            sign ok = new sign();
+            ok.Show();
+            this.Hide();
+        }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About ok = new About();
+            ok.Show();
             this.Hide();
         }
     }

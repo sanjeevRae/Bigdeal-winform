@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Up103));
             panel6 = new Panel();
+            txtPrice2 = new Label();
+            lblpname3 = new Label();
             cb = new CheckBox();
             textBox3 = new TextBox();
             txtq = new TextBox();
@@ -57,6 +59,8 @@
             // 
             // panel6
             // 
+            panel6.Controls.Add(txtPrice2);
+            panel6.Controls.Add(lblpname3);
             panel6.Controls.Add(cb);
             panel6.Controls.Add(textBox3);
             panel6.Controls.Add(txtq);
@@ -77,7 +81,26 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(946, 355);
             panel6.TabIndex = 2;
-            panel6.Paint += panel6_Paint;
+            // 
+            // txtPrice2
+            // 
+            txtPrice2.AutoSize = true;
+            txtPrice2.ForeColor = Color.White;
+            txtPrice2.Location = new Point(808, 284);
+            txtPrice2.Name = "txtPrice2";
+            txtPrice2.Size = new Size(76, 32);
+            txtPrice2.TabIndex = 47;
+            txtPrice2.Text = "label1";
+            // 
+            // lblpname3
+            // 
+            lblpname3.AutoSize = true;
+            lblpname3.ForeColor = Color.White;
+            lblpname3.Location = new Point(420, 284);
+            lblpname3.Name = "lblpname3";
+            lblpname3.Size = new Size(89, 32);
+            lblpname3.TabIndex = 46;
+            lblpname3.Text = "pname";
             // 
             // cb
             // 
@@ -123,6 +146,7 @@
             up.SizeMode = PictureBoxSizeMode.Zoom;
             up.TabIndex = 38;
             up.TabStop = false;
+            up.Click += up_Click;
             // 
             // dowm
             // 
@@ -135,6 +159,7 @@
             dowm.SizeMode = PictureBoxSizeMode.Zoom;
             dowm.TabIndex = 39;
             dowm.TabStop = false;
+            dowm.Click += dowm_Click;
             // 
             // textBox1
             // 
@@ -237,7 +262,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
-          //  pictureBox5.Click += pictureBox5_Click;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox7
             // 
@@ -289,5 +314,7 @@
         private PictureBox W;
         private PictureBox pictureBox5;
         private PictureBox pictureBox7;
+        private Label lblpname3;
+        private Label txtPrice2;
     }
 }

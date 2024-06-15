@@ -91,9 +91,9 @@
             label5.ForeColor = Color.Black;
             label5.Location = new Point(3, 519);
             label5.Name = "label5";
-            label5.Size = new Size(110, 33);
+            label5.Size = new Size(90, 33);
             label5.TabIndex = 3;
-            label5.Text = "Rs 1,500";
+            label5.Text = "Rs 900";
             // 
             // label6
             // 
@@ -102,9 +102,9 @@
             label6.ForeColor = Color.Black;
             label6.Location = new Point(3, 430);
             label6.Name = "label6";
-            label6.Size = new Size(86, 33);
+            label6.Size = new Size(194, 33);
             label6.TabIndex = 1;
-            label6.Text = "label6";
+            label6.Text = "Women's pants";
             // 
             // pictureBox6
             // 
@@ -146,7 +146,7 @@
             label3.Name = "label3";
             label3.Size = new Size(110, 33);
             label3.TabIndex = 3;
-            label3.Text = "Rs 1,500";
+            label3.Text = "Rs 1,800";
             // 
             // label4
             // 
@@ -155,9 +155,9 @@
             label4.ForeColor = Color.Black;
             label4.Location = new Point(3, 430);
             label4.Name = "label4";
-            label4.Size = new Size(86, 33);
+            label4.Size = new Size(210, 33);
             label4.TabIndex = 1;
-            label4.Text = "label4";
+            label4.Text = "Japanese Hoodie";
             // 
             // pictureBox4
             // 
@@ -197,9 +197,9 @@
             label1.ForeColor = Color.Black;
             label1.Location = new Point(3, 519);
             label1.Name = "label1";
-            label1.Size = new Size(110, 33);
+            label1.Size = new Size(90, 33);
             label1.TabIndex = 3;
-            label1.Text = "Rs 1,500";
+            label1.Text = "Rs 500";
             // 
             // label2
             // 
@@ -208,9 +208,9 @@
             label2.ForeColor = Color.Black;
             label2.Location = new Point(3, 430);
             label2.Name = "label2";
-            label2.Size = new Size(86, 33);
+            label2.Size = new Size(286, 33);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Women's woolen pants";
             // 
             // pictureBox2
             // 
@@ -261,9 +261,9 @@
             label24.ForeColor = Color.Black;
             label24.Location = new Point(3, 430);
             label24.Name = "label24";
-            label24.Size = new Size(100, 33);
+            label24.Size = new Size(212, 33);
             label24.TabIndex = 1;
-            label24.Text = "label24";
+            label24.Text = "T-shirt long sleve";
             // 
             // pictureBox19
             // 

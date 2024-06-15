@@ -467,7 +467,7 @@
             panel6.Controls.Add(pictureBox7);
             panel6.Location = new Point(6, 284);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1453, 1042);
+            panel6.Size = new Size(1493, 1042);
             panel6.TabIndex = 31;
             // 
             // pictureBox13
@@ -1198,7 +1198,7 @@
             label33.Name = "label33";
             label33.Size = new Size(61, 32);
             label33.TabIndex = 32;
-            label33.Text = "P101";
+            label33.Text = "About";
             label33.Click += label31_Click;
             // 
             // label39
@@ -1512,7 +1512,7 @@
             pictureBox28.TabIndex = 0;
             pictureBox28.TabStop = false;
             // 
-            // P101
+            // About
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -1524,9 +1524,9 @@
             ForeColor = SystemColors.ControlDarkDark;
             FormBorderStyle = FormBorderStyle.None;
             MainMenuStrip = menuStrip1;
-            Name = "P101";
+            Name = "About";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "P101";
+            Text = "About";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

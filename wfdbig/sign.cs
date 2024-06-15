@@ -14,17 +14,18 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MySql.Data.MySqlClient;
 
+
 namespace wfdbig
 {
     public partial class sign : Form
     {
         private string connectionString = "server=localhost;user=root;database=bigdeal;port=3306;password=@Mysqlserver;";
-
+       
         public sign()
         {
             InitializeComponent();
 
-
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -62,7 +63,7 @@ namespace wfdbig
 
         private void sign_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

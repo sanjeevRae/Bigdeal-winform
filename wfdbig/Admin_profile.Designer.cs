@@ -36,7 +36,7 @@
             label2 = new Label();
             blEditProfilePic = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
+            txtAdminName = new TextBox();
             label5 = new Label();
             label6 = new Label();
             textBox2 = new TextBox();
@@ -159,17 +159,19 @@
             label4.TabIndex = 39;
             label4.Text = "User Name  *";
             // 
-            // textBox1
+            // txtAdminName
             // 
-            textBox1.BackColor = Color.White;
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Tw Cen MT", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(438, 526);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(450, 51);
-            textBox1.TabIndex = 40;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtAdminName.BackColor = Color.White;
+            txtAdminName.BorderStyle = BorderStyle.FixedSingle;
+            txtAdminName.Font = new Font("Tw Cen MT", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAdminName.Location = new Point(438, 526);
+            txtAdminName.Multiline = true;
+            txtAdminName.Name = "txtAdminName";
+            txtAdminName.ReadOnly = true;
+            txtAdminName.Size = new Size(450, 51);
+            txtAdminName.TabIndex = 40;
+            txtAdminName.Click += label8_Click;
+            txtAdminName.TextChanged += txtAdminName_TextChanged_1;
             // 
             // label5
             // 
@@ -182,6 +184,7 @@
             label5.Size = new Size(67, 25);
             label5.TabIndex = 39;
             label5.Text = "Admin";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -205,7 +208,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(450, 51);
             textBox2.TabIndex = 40;
-            textBox2.TextChanged += textBox1_TextChanged;
             // 
             // label7
             // 
@@ -265,6 +267,7 @@
             label8.Size = new Size(45, 25);
             label8.TabIndex = 39;
             label8.Text = "Edit";
+            label8.Click += label8_Click;
             // 
             // label9
             // 
@@ -319,7 +322,7 @@
             profile.Controls.Add(textBox5);
             profile.Controls.Add(textBox4);
             profile.Controls.Add(textBox3);
-            profile.Location = new Point(6, 173);
+            profile.Location = new Point(3, 160);
             profile.Name = "profile";
             profile.Size = new Size(1299, 980);
             profile.TabIndex = 42;
@@ -497,7 +500,6 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(450, 66);
             textBox5.TabIndex = 40;
-            textBox5.TextChanged += textBox1_TextChanged;
             // 
             // textBox4
             // 
@@ -509,7 +511,6 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(450, 61);
             textBox4.TabIndex = 40;
-            textBox4.TextChanged += textBox1_TextChanged;
             // 
             // textBox3
             // 
@@ -521,7 +522,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(450, 61);
             textBox3.TabIndex = 40;
-            textBox3.TextChanged += textBox1_TextChanged;
             // 
             // Admin_profile
             // 
@@ -536,7 +536,7 @@
             Controls.Add(label8);
             Controls.Add(label5);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtAdminName);
             Controls.Add(label11);
             Controls.Add(label6);
             Controls.Add(label4);
@@ -570,7 +570,7 @@
         private Label label2;
         private Label blEditProfilePic;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox txtAdminName;
         private Label label5;
         private Label label6;
         private TextBox textBox2;
