@@ -66,10 +66,11 @@ Developed using Windows Forms in Visual Studio and C# programming language, BigD
 
 ![Screenshot 2024-06-16 101350](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/6db1cefc-d63a-49cd-8360-4c17ec0dcc2a)
 ![Screenshot 2024-06-16 101402](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/664fd6dd-590a-4e46-ad89-c0d172f36363)
-
+<br>
 ## Try Bigdeal Application
 
-- [Download here](https://drive.google.com/drive/folders/1-cdBaSPAuPLHAAh2i0IJbrlWe4HXcNZM?usp=drive_link)
+- [Download](https://drive.google.com/drive/folders/1-cdBaSPAuPLHAAh2i0IJbrlWe4HXcNZM?usp=drive_link)
+- <br>
 - **How to run Bigdeal exe?**
   - Open the folder `Bigdeal`
   - Go to `debug`
