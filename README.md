@@ -61,9 +61,7 @@ Developed using Windows Forms in Visual Studio and C# programming language, BigD
 
 
 ![Screenshot 2024-06-16 101232](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/06523f2e-379c-4cbb-969a-255040d27f2f)
-![Screenshot 2024-06-16 101242](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/1d2ca669-4e92-4660-be77-099dcf6635e5)
 
-![Screenshot 2024-06-16 101300](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/9e53ee76-8392-4563-b0f4-b113858747b3)
 
 
 ![Screenshot 2024-06-16 101350](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/6db1cefc-d63a-49cd-8360-4c17ec0dcc2a)
