@@ -3,7 +3,7 @@
 **BigDeal**  is an innovative online shopping platform designed as a college project to create a user-friendly and intuitive shopping experience.<br><br>
 Developed using Windows Forms in Visual Studio and C# programming language, BigDeal features a clean and visually appealing layout for easy navigation, comprehensive search and filter options, secure integration of product information with high-quality images.<br> 
 
-Tools/technology used:<br>
+## Technologies
   - **IDE**: Visual Studio
   - **.NET Framework**: Windows Form application
   - **Language**: C#
@@ -46,7 +46,6 @@ Tools/technology used:<br>
 
 ![Screenshot 2024-06-16 095822](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/3f87e383-5b92-4eae-9a7b-75b8237b49d8)
 
-![Screenshot 2024-06-16 095838](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/c1e2d7f1-1f8e-48a1-880b-d797c4b485e5)
 
 ![Screenshot 2024-06-16 101628](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/6527c8a7-b6ec-4718-993a-9c32d8f29c04)
 
