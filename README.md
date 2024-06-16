@@ -16,6 +16,21 @@ Developed using Windows Forms in Visual Studio and C# programming language, BigD
 
 ![pasted image 0](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/95e72e59-c74a-4d64-b7b5-cbc20f17b1ed)
 <br>
+
+## Objectives
+
+- **Wide Range of Products** 
+- **User-Friendly Interface**
+- **Enhanced Product Discovery**
+- **Secure Transactions**
+
+## Features
+
+- **Intuitive User Interface**
+- **Search and Filter Options** 
+- **Secure Integration**
+- **Personalized Setting**
+  
 ## Screenshots
 
 ![Screenshot 2024-06-16 100957](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/9a8dbe0e-ac59-442a-b9fd-4462ac73ee49)
