@@ -43,9 +43,6 @@ Tools/technology used:<br>
 
 ![Screenshot 2024-06-16 100008](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/ac56fb17-a74a-4927-99e1-7e404c08f530)
 
-![Screenshot 2024-06-16 095858](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/fbfd2a9c-11ac-4510-8fcb-ba32d2f10791)
-
-![Screenshot 2024-06-16 095923](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/38167b02-c479-4de7-b153-69c9258d3040)
 
 ![Screenshot 2024-06-16 095822](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/3f87e383-5b92-4eae-9a7b-75b8237b49d8)
 
@@ -60,8 +57,6 @@ Tools/technology used:<br>
 
 ![Screenshot 2024-06-16 101300](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/9e53ee76-8392-4563-b0f4-b113858747b3)
 
-![Screenshot 2024-06-16 101311](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/bfff1897-a7c2-4e61-932e-6c0b03f0381d)
 
-![Screenshot 2024-06-16 101339](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/ce50113c-91d2-484b-a449-a9026c037ab8)
 ![Screenshot 2024-06-16 101350](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/6db1cefc-d63a-49cd-8360-4c17ec0dcc2a)
 ![Screenshot 2024-06-16 101402](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/664fd6dd-590a-4e46-ad89-c0d172f36363)
