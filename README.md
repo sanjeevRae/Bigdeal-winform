@@ -19,17 +19,17 @@ Developed using Windows Forms in Visual Studio and C# programming language, BigD
 
 ## Objectives
 
-- **Wide Range of Products** 
-- **User-Friendly Interface**
-- **Enhanced Product Discovery**
-- **Secure Transactions**
+- Wide Range of Products
+- User-Friendly Interface
+- Enhanced Product Discovery
+- Secure Transactions
 
 ## Features
 
-- **Intuitive User Interface**
-- **Search and Filter Options** 
-- **Secure Integration**
-- **Personalized Setting**
+- Intuitive User Interface
+- Search and Filter Options
+- Secure Integration
+- Personalized Setting
   
 ## Screenshots
 
