@@ -11,11 +11,43 @@ Tools/technology used:<br>
   - **Payment API integration**: Khalti
   - **For Authentication**: Gmail API
 
-## SDLC
+## SDLC Model
 <br>
-![pasted image 0](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/1c5a0c6c-a058-47b6-8bc5-4be30851c217)
 
+![pasted image 0](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/95e72e59-c74a-4d64-b7b5-cbc20f17b1ed)
+<br>
+## Screenshots
 
+![Screenshot 2024-06-16 100957](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/9a8dbe0e-ac59-442a-b9fd-4462ac73ee49)
+
+![Screenshot 2024-06-14 041319](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/82ae61aa-2841-4898-8efd-0ce7618ea440)
+
+![Screenshot 2024-06-16 095446](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/b97d2fb5-d25f-42a5-8b85-db4fdf24bb7e)
+
+![Screenshot 2024-06-16 095511](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/fcf6e07a-eefb-4bf9-acab-f1dc44514017)
+
+![Screenshot 2024-06-16 095625](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/62273975-4757-4b8f-8cba-1dc9339707af)
+
+![Screenshot 2024-06-16 095651](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/278822ba-bfbe-4067-bbac-505fd038e724)
+
+![Screenshot 2024-06-16 095718](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/5603d7e9-45ee-43dc-b09a-5157cfa2ddf5)
+![Screenshot 2024-06-16 095729](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/8b686f6e-a0cd-4c1b-a8fd-5788b0d39891)
+
+![Screenshot 2024-06-16 095740](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/56b5f533-c17c-48a6-8247-31d8d10274a4)
+
+![Screenshot 2024-06-16 095802](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/4d7abaeb-cb49-48c5-9ee2-e3eb0687c2e3)
+
+![Screenshot 2024-06-16 100045](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/be37a6c3-89cc-4003-9a78-efe977d1256b)
+
+![Screenshot 2024-06-16 100008](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/ac56fb17-a74a-4927-99e1-7e404c08f530)
+
+![Screenshot 2024-06-16 095858](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/fbfd2a9c-11ac-4510-8fcb-ba32d2f10791)
+
+![Screenshot 2024-06-16 095923](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/38167b02-c479-4de7-b153-69c9258d3040)
+
+![Screenshot 2024-06-16 095822](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/3f87e383-5b92-4eae-9a7b-75b8237b49d8)
+
+![Screenshot 2024-06-16 095838](https://github.com/sanjeevRae/wfdbig_v1/assets/153409046/c1e2d7f1-1f8e-48a1-880b-d797c4b485e5)
 
 
 
